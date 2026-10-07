@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* Evacuation Flowing Route Animation */
+@keyframes routeFlow {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+.route-flow-animation {
+  stroke-dasharray: 10 10;
+  animation: routeFlow 1.2s linear infinite;
+}
+
+.ghost-route-faded {
+  opacity: 0.35;
+  transition: opacity 3s ease-out;
+}
+
+/* Pulsing Markers */
+@keyframes markerPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+  }
+  70% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 12px rgba(59, 130, 246, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.pulsing-blue-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #3b82f6;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  animation: markerPulse 1.8s infinite;
+}
+
+@keyframes strandedPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.8);
+  }
+  70% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 14px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+.pulsing-stranded-dot {
+  width: 18px;
+  height: 18px;
+  background-color: #ef4444;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  animation: strandedPulse 1.4s infinite;
+}

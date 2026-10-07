@@ -1,0 +1,607 @@
+{
+  "city_name": "Pimpri-Chinchwad (PCMC), Pune",
+  "center_coordinates": {
+    "lat": 18.6274,
+    "lng": 73.8016
+  },
+  "river_basin": "Pavana & Mula River Basin",
+  "total_locations": 25,
+  "total_roads": 40,
+  "safe_zones_count": 3,
+  "ngo_bases_count": 2,
+  "locations": [
+    {
+      "id": "LOC_01",
+      "name": "Old Sangvi Riverfront Bridge",
+      "lat": 18.5772,
+      "lng": 73.8185,
+      "elevation_m": 554.0,
+      "population": 7200,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "LOC_02",
+      "name": "Dapodi Confluence Checkpoint",
+      "lat": 18.5834,
+      "lng": 73.8341,
+      "elevation_m": 561.0,
+      "population": 5400,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "LOC_03",
+      "name": "New Sangvi Shitala Nagar",
+      "lat": 18.5856,
+      "lng": 73.8122,
+      "elevation_m": 562.0,
+      "population": 9800,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "LOC_04",
+      "name": "Pimple Gurav Kate Puram",
+      "lat": 18.5925,
+      "lng": 73.8198,
+      "elevation_m": 558.0,
+      "population": 8600,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "LOC_05",
+      "name": "Kashid Park Pavana Embankment",
+      "lat": 18.5891,
+      "lng": 73.8052,
+      "elevation_m": 555.0,
+      "population": 6500,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "LOC_06",
+      "name": "Pimple Saudagar Linear Park",
+      "lat": 18.5985,
+      "lng": 73.7932,
+      "elevation_m": 567.0,
+      "population": 12400,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "LOC_07",
+      "name": "Govind Garden Chowk",
+      "lat": 18.6022,
+      "lng": 73.7995,
+      "elevation_m": 569.0,
+      "population": 8200,
+      "is_safe_zone": false,
+      "type": "commercial"
+    },
+    {
+      "id": "LOC_08",
+      "name": "Rose Icon Commercial Basin",
+      "lat": 18.6045,
+      "lng": 73.7884,
+      "elevation_m": 566.0,
+      "population": 9100,
+      "is_safe_zone": false,
+      "type": "commercial"
+    },
+    {
+      "id": "LOC_09",
+      "name": "Wakad Jagtap Dairy Crossing",
+      "lat": 18.5912,
+      "lng": 73.7824,
+      "elevation_m": 566.0,
+      "population": 3100,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "LOC_10",
+      "name": "Wakad Kaspate Vasti",
+      "lat": 18.5958,
+      "lng": 73.7742,
+      "elevation_m": 566.0,
+      "population": 14200,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "LOC_11",
+      "name": "Wakad Datta Mandir Chowk",
+      "lat": 18.6015,
+      "lng": 73.7658,
+      "elevation_m": 572.0,
+      "population": 8900,
+      "is_safe_zone": false,
+      "type": "junction"
+    },
+    {
+      "id": "LOC_12",
+      "name": "Bhumkar Chowk Highway Hub",
+      "lat": 18.6062,
+      "lng": 73.7512,
+      "elevation_m": 587.0,
+      "population": 7800,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "LOC_13",
+      "name": "Dange Chowk Master Hub",
+      "lat": 18.6145,
+      "lng": 73.7708,
+      "elevation_m": 578.0,
+      "population": 11000,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "LOC_14",
+      "name": "Thergaon Boat Club River Road",
+      "lat": 18.6112,
+      "lng": 73.7842,
+      "elevation_m": 556.0,
+      "population": 7900,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "LOC_15",
+      "name": "Kalewadi Phata Interchange",
+      "lat": 18.6132,
+      "lng": 73.7984,
+      "elevation_m": 564.0,
+      "population": 6200,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "LOC_16",
+      "name": "Nadnagar Kalewadi Bridge",
+      "lat": 18.6185,
+      "lng": 73.7915,
+      "elevation_m": 557.0,
+      "population": 6700,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "LOC_17",
+      "name": "Pimpri Saudagar Link Road",
+      "lat": 18.6212,
+      "lng": 73.8012,
+      "elevation_m": 568.0,
+      "population": 9400,
+      "is_safe_zone": false,
+      "type": "commercial"
+    },
+    {
+      "id": "LOC_18",
+      "name": "Pimpri Railway Station Square",
+      "lat": 18.6274,
+      "lng": 73.8016,
+      "elevation_m": 565.0,
+      "population": 11500,
+      "is_safe_zone": false,
+      "type": "transit_hub"
+    },
+    {
+      "id": "LOC_19",
+      "name": "PCMC Municipal Corporation HQ",
+      "lat": 18.6288,
+      "lng": 73.8124,
+      "elevation_m": 583.0,
+      "population": 4500,
+      "is_safe_zone": false,
+      "type": "civic_hub"
+    },
+    {
+      "id": "LOC_20",
+      "name": "Nehrunagar Bus Terminal",
+      "lat": 18.6364,
+      "lng": 73.8242,
+      "elevation_m": 583.0,
+      "population": 13200,
+      "is_safe_zone": false,
+      "type": "transit_hub"
+    },
+    {
+      "id": "LOC_21",
+      "name": "Sant Tukaram Nagar Metro Station",
+      "lat": 18.6234,
+      "lng": 73.8228,
+      "elevation_m": 580.0,
+      "population": 7600,
+      "is_safe_zone": false,
+      "type": "transit_hub"
+    },
+    {
+      "id": "LOC_22",
+      "name": "Kasarwadi Confluence Railway Gate",
+      "lat": 18.6082,
+      "lng": 73.8224,
+      "elevation_m": 562.0,
+      "population": 8400,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "SZ_01",
+      "name": "Dr. D.Y. Patil Medical College Hospital & Emergency Shelter",
+      "lat": 18.6255,
+      "lng": 73.8232,
+      "elevation_m": 581.0,
+      "capacity": 3500,
+      "is_safe_zone": true,
+      "type": "shelter_hospital",
+      "population": 0
+    },
+    {
+      "id": "SZ_02",
+      "name": "Major Dhyan Chand National Sports Stadium Shelter",
+      "lat": 18.6415,
+      "lng": 73.829,
+      "elevation_m": 589.0,
+      "capacity": 5500,
+      "is_safe_zone": true,
+      "type": "shelter_stadium",
+      "population": 0
+    },
+    {
+      "id": "SZ_03",
+      "name": "Bhakti Shakti Hilltop Municipal High School Complex",
+      "lat": 18.6625,
+      "lng": 73.7702,
+      "elevation_m": 606.0,
+      "capacity": 4200,
+      "is_safe_zone": true,
+      "type": "shelter_highland",
+      "population": 0
+    }
+  ],
+  "ngo_bases": [
+    {
+      "id": "NGO_01",
+      "name": "Red Cross Emergency Relief Depot",
+      "node": "LOC_20",
+      "contact": "+91 20 2742 5555",
+      "vehicle_capacity": 8,
+      "base_location": "Nehrunagar Transit Hub"
+    },
+    {
+      "id": "NGO_02",
+      "name": "NDRF 5th Battalion Rapid Task Force",
+      "node": "LOC_21",
+      "contact": "+91 20 2747 1122",
+      "vehicle_capacity": 14,
+      "base_location": "Sant Tukaram Nagar Metro Depot"
+    }
+  ],
+  "roads": [
+    {
+      "id": "RD_01",
+      "from": "LOC_01",
+      "to": "LOC_03",
+      "distance_km": 1.15,
+      "name": "Old Sangvi - New Sangvi Link",
+      "low_lying": 0.85
+    },
+    {
+      "id": "RD_02",
+      "from": "LOC_01",
+      "to": "LOC_02",
+      "distance_km": 1.78,
+      "name": "Sangvi - Dapodi Embankment Road",
+      "low_lying": 0.90
+    },
+    {
+      "id": "RD_03",
+      "from": "LOC_01",
+      "to": "LOC_05",
+      "distance_km": 1.91,
+      "name": "Pavana Riverfront Causeway",
+      "low_lying": 0.95
+    },
+    {
+      "id": "RD_04",
+      "from": "LOC_02",
+      "to": "LOC_04",
+      "distance_km": 1.81,
+      "name": "Dapodi - Pimple Gurav Connector",
+      "low_lying": 0.70
+    },
+    {
+      "id": "RD_05",
+      "from": "LOC_02",
+      "to": "LOC_22",
+      "distance_km": 2.25,
+      "name": "Dapodi - Kasarwadi Confluence Road",
+      "low_lying": 0.65
+    },
+    {
+      "id": "RD_06",
+      "from": "LOC_03",
+      "to": "LOC_04",
+      "distance_km": 1.11,
+      "name": "New Sangvi - Kate Puram Road",
+      "low_lying": 0.45
+    },
+    {
+      "id": "RD_07",
+      "from": "LOC_03",
+      "to": "LOC_05",
+      "distance_km": 0.82,
+      "name": "Kashid Park Riverside Access",
+      "low_lying": 0.80
+    },
+    {
+      "id": "RD_08",
+      "from": "LOC_04",
+      "to": "LOC_06",
+      "distance_km": 1.56,
+      "name": "Kate Puram - Saudagar Arterial",
+      "low_lying": 0.35
+    },
+    {
+      "id": "RD_09",
+      "from": "LOC_05",
+      "to": "LOC_06",
+      "distance_km": 1.40,
+      "name": "Kashid - Linear Park Connector",
+      "low_lying": 0.40
+    },
+    {
+      "id": "RD_10",
+      "from": "LOC_05",
+      "to": "LOC_09",
+      "distance_km": 1.85,
+      "name": "Kashid - Jagtap Dairy Road",
+      "low_lying": 0.50
+    },
+    {
+      "id": "RD_11",
+      "from": "LOC_06",
+      "to": "LOC_07",
+      "distance_km": 0.50,
+      "name": "Pimple Saudagar Main Boulevard",
+      "low_lying": 0.15
+    },
+    {
+      "id": "RD_12",
+      "from": "LOC_06",
+      "to": "LOC_08",
+      "distance_km": 0.61,
+      "name": "Rose Icon Commercial Avenue",
+      "low_lying": 0.18
+    },
+    {
+      "id": "RD_13",
+      "from": "LOC_07",
+      "to": "LOC_15",
+      "distance_km": 1.25,
+      "name": "Govind Garden - Kalewadi Phata Way",
+      "low_lying": 0.20
+    },
+    {
+      "id": "RD_14",
+      "from": "LOC_07",
+      "to": "LOC_17",
+      "distance_km": 1.95,
+      "name": "Saudagar - Pimpri Link Road",
+      "low_lying": 0.22
+    },
+    {
+      "id": "RD_15",
+      "from": "LOC_08",
+      "to": "LOC_14",
+      "distance_km": 1.05,
+      "name": "Rose Icon - Thergaon Causeway",
+      "low_lying": 0.75
+    },
+    {
+      "id": "RD_16",
+      "from": "LOC_08",
+      "to": "LOC_13",
+      "distance_km": 2.10,
+      "name": "Thergaon - Dange Chowk Arterial",
+      "low_lying": 0.25
+    },
+    {
+      "id": "RD_17",
+      "from": "LOC_09",
+      "to": "LOC_10",
+      "distance_km": 0.85,
+      "name": "Jagtap Dairy - Kaspate Vasti Link",
+      "low_lying": 0.20
+    },
+    {
+      "id": "RD_18",
+      "from": "LOC_09",
+      "to": "LOC_06",
+      "distance_km": 1.10,
+      "name": "Jagtap - Saudagar Parkway",
+      "low_lying": 0.18
+    },
+    {
+      "id": "RD_19",
+      "from": "LOC_10",
+      "to": "LOC_11",
+      "distance_km": 1.02,
+      "name": "Kaspate Vasti - Datta Mandir Road",
+      "low_lying": 0.15
+    },
+    {
+      "id": "RD_20",
+      "from": "LOC_10",
+      "to": "LOC_12",
+      "distance_km": 2.15,
+      "name": "Wakad - Bhumkar Chowk Expressway",
+      "low_lying": 0.10
+    },
+    {
+      "id": "RD_21",
+      "from": "LOC_11",
+      "to": "LOC_13",
+      "distance_km": 1.55,
+      "name": "Datta Mandir - Dange Chowk Road",
+      "low_lying": 0.12
+    },
+    {
+      "id": "RD_22",
+      "from": "LOC_12",
+      "to": "LOC_13",
+      "distance_km": 1.80,
+      "name": "Bhumkar - Dange Highway",
+      "low_lying": 0.08
+    },
+    {
+      "id": "RD_23",
+      "from": "LOC_13",
+      "to": "LOC_14",
+      "distance_km": 1.35,
+      "name": "Dange Chowk - Thergaon Link",
+      "low_lying": 0.30
+    },
+    {
+      "id": "RD_24",
+      "from": "LOC_13",
+      "to": "LOC_16",
+      "distance_km": 2.15,
+      "name": "Dange Chowk - Kalewadi Bridge Way",
+      "low_lying": 0.25
+    },
+    {
+      "id": "RD_25",
+      "from": "LOC_14",
+      "to": "LOC_16",
+      "distance_km": 1.12,
+      "name": "Boat Club - Nadnagar Riverfront",
+      "low_lying": 0.85
+    },
+    {
+      "id": "RD_26",
+      "from": "LOC_15",
+      "to": "LOC_16",
+      "distance_km": 0.95,
+      "name": "Kalewadi Phata - Nadnagar Bridge",
+      "low_lying": 0.60
+    },
+    {
+      "id": "RD_27",
+      "from": "LOC_15",
+      "to": "LOC_17",
+      "distance_km": 1.20,
+      "name": "Kalewadi - Pimpri Station Link",
+      "low_lying": 0.15
+    },
+    {
+      "id": "RD_28",
+      "from": "LOC_15",
+      "to": "LOC_22",
+      "distance_km": 1.85,
+      "name": "Kalewadi - Kasarwadi Radial Road",
+      "low_lying": 0.40
+    },
+    {
+      "id": "RD_29",
+      "from": "LOC_17",
+      "to": "LOC_18",
+      "distance_km": 0.85,
+      "name": "Pimpri Saudagar - Railway Square",
+      "low_lying": 0.12
+    },
+    {
+      "id": "RD_30",
+      "from": "LOC_18",
+      "to": "LOC_19",
+      "distance_km": 1.15,
+      "name": "Railway Square - PCMC HQ Arterial",
+      "low_lying": 0.08
+    },
+    {
+      "id": "RD_31",
+      "from": "LOC_18",
+      "to": "LOC_21",
+      "distance_km": 1.70,
+      "name": "Pimpri - Sant Tukaram Metro Avenue",
+      "low_lying": 0.10
+    },
+    {
+      "id": "RD_32",
+      "from": "LOC_19",
+      "to": "LOC_20",
+      "distance_km": 1.45,
+      "name": "PCMC HQ - Nehrunagar Transit Road",
+      "low_lying": 0.05
+    },
+    {
+      "id": "RD_33",
+      "from": "LOC_19",
+      "to": "SZ_01",
+      "distance_km": 1.25,
+      "name": "PCMC HQ - Dr. D.Y. Patil Hospital Ramp",
+      "low_lying": 0.05
+    },
+    {
+      "id": "RD_34",
+      "from": "LOC_20",
+      "to": "SZ_02",
+      "distance_km": 1.10,
+      "name": "Nehrunagar - National Stadium Access",
+      "low_lying": 0.02
+    },
+    {
+      "id": "RD_35",
+      "from": "LOC_21",
+      "to": "SZ_01",
+      "distance_km": 0.65,
+      "name": "Metro Station - Hospital Emergency Corridor",
+      "low_lying": 0.04
+    },
+    {
+      "id": "RD_36",
+      "from": "LOC_22",
+      "to": "LOC_18",
+      "distance_km": 2.10,
+      "name": "Kasarwadi - Pimpri Station Boulevard",
+      "low_lying": 0.20
+    },
+    {
+      "id": "RD_37",
+      "from": "LOC_22",
+      "to": "LOC_21",
+      "distance_km": 2.20,
+      "name": "Kasarwadi - Sant Tukaram Metro Link",
+      "low_lying": 0.18
+    },
+    {
+      "id": "RD_38",
+      "from": "SZ_01",
+      "to": "SZ_02",
+      "distance_km": 1.85,
+      "name": "Inter-Shelter Hospital - Stadium Corridor",
+      "low_lying": 0.02
+    },
+    {
+      "id": "RD_39",
+      "from": "LOC_13",
+      "to": "SZ_03",
+      "distance_km": 4.80,
+      "name": "Dange Chowk - Bhakti Shakti Highland Highway",
+      "low_lying": 0.05
+    },
+    {
+      "id": "RD_40",
+      "from": "LOC_19",
+      "to": "SZ_03",
+      "distance_km": 5.20,
+      "name": "PCMC HQ - Bhakti Shakti Northern Arterial",
+      "low_lying": 0.04
+    }
+  ]
+}

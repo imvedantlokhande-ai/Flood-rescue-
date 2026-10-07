@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Flood Evacuation Route Planner - Real-Time Autonomous Emergency Operations</title>
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Full-Screen Interactive Google Map Container -->
+  <div id="map" role="application" aria-label="Interactive real-time emergency evacuation map"></div>
+
+  <!-- Missing Google Maps API Key Setup Modal -->
+  <div id="api-key-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="badge badge-warning">
+          <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Google Maps Key Setup
+        </span>
+      </div>
+      <h2 id="modal-title">Enter Google Maps API Key</h2>
+      <p>A Google Maps JavaScript API key is needed to load live vector map tiles, satellite views, and traffic layers:</p>
+      
+      <div class="key-input-group">
+        <input type="text" id="input-api-key" placeholder="AIzaSy..." class="input-text" autocomplete="off" />
+        <button id="btn-save-key" class="btn btn-primary">Save & Load Map</button>
+      </div>
+
+      <div class="modal-divider">or</div>
+
+      <button id="btn-continue-simulation" class="btn btn-secondary btn-block">
+        Continue in Local Telemetry Mode (Canvas Visualizer)
+      </button>
+      <p class="modal-footer-note">
+        Pure Python DSA pathfinding (MinHeap, Dijkstra, BFS, DFS) and real-time Open-Meteo telemetry streams run autonomously regardless.
+      </p>
+    </div>
+  </div>
+
+  <!-- Top Bar: Logo, City, Live Pulse, Data Sources Tooltip, Theme & Sound -->
+  <header class="app-topbar" role="banner">
+    <div class="topbar-left">
+      <div class="brand">
+        <div class="brand-icon-wrapper" aria-hidden="true">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-title">Flood Evacuation Ops</h1>
+          <span class="brand-sub">Pavana & Mula Basin • PCMC, Pune</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-center">
+      <!-- Pulsing Live Dot & Update Counter -->
+      <div class="live-status-pill" id="live-status-pill" aria-live="polite">
+        <span class="live-dot" id="live-dot"></span>
+        <span class="live-text">LIVE TELEMETRY</span>
+        <span class="live-timer" id="live-timer-counter">Updated 2s ago</span>
+      </div>
+
+      <!-- Data Source Tooltip Trigger -->
+      <div class="tooltip-container">
+        <button class="btn-chip" id="btn-data-sources" aria-label="View verified telemetry data sources">
+          <svg class="icon-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          Data Sources
+        </button>
+        <div class="tooltip-popover" id="tooltip-popover" role="tooltip">
+          <h4>Municipal Telemetry Audit</h4>
+          <div class="data-group">
+            <span class="group-label">REAL-TIME TELEMETRY (VERIFIED):</span>
+            <ul>
+              <li><strong>Open-Meteo Forecast API:</strong> Live precipitation (mm/hr) & 24h hourly forecast.</li>
+              <li><strong>Open-Meteo Flood API:</strong> GloFAS Pavana River discharge stream (m³/s).</li>
+              <li><strong>Open-Meteo Elevation API:</strong> STRM 90m high-resolution topographical elevation per node.</li>
+              <li><strong>OpenStreetMap Overpass:</strong> Arterial highway topology (100 nodes, 247 roads).</li>
+            </ul>
+          </div>
+          <div class="data-group mt-2">
+            <span class="group-label">HYDROLOGICAL ESTIMATION:</span>
+            <ul>
+              <li><strong>Road Water Level:</strong> Hydraulic runoff equation computed from precipitation, river discharge, and terrain elevation minimums.</li>
+              <li><strong>Road Impassability:</strong> Submerged cut-off threshold at ≥0.5m depth; caution penalty at 0.2m–0.49m.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stale Data Badge -->
+      <span class="badge badge-warning hidden" id="badge-stale-data">
+        <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Stale Data (Cached)
+      </span>
+    </div>
+
+    <div class="topbar-right">
+      <button id="btn-sound-toggle" class="btn-icon" title="Toggle Emergency Audio Chimes" aria-label="Toggle alert sounds">
+        <svg id="sound-icon-on" class="icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+        <svg id="sound-icon-off" class="icon-btn hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/><path d="m2 2 20 20"/><path d="M8.66 8.66A6 6 0 0 1 18 8c0 7 3 9 3 9H5.34"/></svg>
+      </button>
+
+      <button id="btn-theme-toggle" class="btn-icon" title="Toggle Light / Dark Theme" aria-label="Toggle theme">
+        <svg id="theme-icon-sun" class="icon-btn hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        <svg id="theme-icon-moon" class="icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+
+      <button id="btn-sidebar-toggle" class="btn-icon mobile-only" aria-label="Toggle navigation drawer">
+        <svg class="icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-Width Emergency Alert Banner (Shown during HIGH/SEVERE threats or when isolated) -->
+  <div id="banner-emergency-alert" class="alert-banner-severe hidden" role="alert" aria-live="assertive">
+    <div class="banner-inner">
+      <div class="banner-icon-col">
+        <svg class="banner-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <div class="banner-text-col">
+        <strong id="banner-alert-title">CRITICAL FLOOD SURGE - GROUND ROUTE COMPROMISED</strong>
+        <p id="banner-alert-desc">All passable ground roads surrounding your sector are submerged. An automated NDRF rescue mission has been queued.</p>
+      </div>
+      <div class="banner-action-col">
+        <a href="tel:112" class="btn btn-call-ndrf" id="btn-call-ndrf">
+          <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 112 Rescue
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left Floating Operations Sidebar (Bottom Sheet on Mobile) -->
+  <aside id="sidebar" class="sidebar-sheet" role="region" aria-label="Municipal emergency operations panel">
+    <!-- Mobile Drag Handle -->
+    <div class="sheet-drag-handle mobile-only" id="sheet-drag-handle" aria-hidden="true">
+      <div class="handle-bar"></div>
+    </div>
+
+    <div class="sidebar-scrollable">
+      
+      <!-- 1. HERO STATUS CARD -->
+      <section class="card card-hero" id="card-hero-status" aria-labelledby="hero-threat-heading">
+        <div class="hero-top-row">
+          <div>
+            <span class="card-eyebrow">Hydrological Threat Assessment</span>
+            <div class="risk-badge-wrapper" id="risk-badge-wrapper">
+              <span class="risk-badge-pulsing-ring hidden" id="risk-pulsing-ring"></span>
+              <span class="risk-badge badge-severe" id="badge-threat-level">
+                <svg class="icon-inline" id="icon-threat-level" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <span id="text-threat-level">SEVERE RISK (84/100)</span>
+              </span>
+            </div>
+          </div>
+          <div class="hero-weather-val">
+            <span class="hero-num" id="val-rainfall-rate">48.5</span>
+            <span class="hero-unit">mm/hr</span>
+          </div>
+        </div>
+
+        <p class="hero-desc" id="text-threat-desc">
+          Intense localized cloudburst exceeding drainage limits. Pavana riverbank overflow recorded.
+        </p>
+
+        <!-- Sparkline Graph of Last 24h & Next 6h Forecast -->
+        <div class="sparkline-section">
+          <div class="sparkline-header">
+            <span>24h Historical Rainfall & 6h Forecast Trend</span>
+            <span class="sparkline-discharge" id="text-river-discharge">River: 42.0 m³/s</span>
+          </div>
+          <div class="sparkline-wrapper">
+            <svg class="sparkline-svg" id="sparkline-svg" viewBox="0 0 360 48" preserveAspectRatio="none" role="img" aria-label="Rainfall trend sparkline">
+              <defs>
+                <linearGradient id="sparklineGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.45" />
+                  <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.0" />
+                </linearGradient>
+              </defs>
+              <path class="sparkline-area" id="sparkline-area" d="" />
+              <path class="sparkline-path" id="sparkline-path" d="" />
+              <line class="sparkline-now-divider" id="sparkline-now-divider" x1="288" y1="0" x2="288" y2="48" />
+            </svg>
+          </div>
+          <div class="sparkline-legend">
+            <span>Past 24 Hours</span>
+            <span class="now-label">Current Now</span>
+            <span>+6h Forecast</span>
+          </div>
+        </div>
+
+        <div class="user-position-strip">
+          <span class="user-pos-label">Your Location:</span>
+          <span class="user-pos-val" id="val-user-pos">Old Sangvi Riverfront Bridge (NODE_001)</span>
+          <button id="btn-use-my-location" class="btn-chip btn-gps" title="Re-acquire GPS coordinate">
+            <svg class="icon-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M2 12h3"/><path d="M19 12h3"/></svg>
+            GPS Snap
+          </button>
+        </div>
+      </section>
+
+      <!-- 2. 8-STEP PIPELINE TRACKER -->
+      <section class="card card-stepper" aria-labelledby="stepper-heading">
+        <div class="card-header-row">
+          <h3 id="stepper-heading" class="card-title">Autonomous 8-Step Pipeline</h3>
+          <span class="badge badge-success badge-sm" id="badge-pipeline-auto">Active Telemetry</span>
+        </div>
+        <div class="pipeline-stepper" id="pipeline-stepper">
+          <div class="step-row" data-step="1">
+            <div class="step-indicator"><span class="step-icon">1</span></div>
+            <div class="step-info"><span class="step-label">1. Telemetry Ingest</span><span class="step-sub">Open-Meteo & GloFAS River Feed</span></div>
+            <span class="step-ms" id="time-step-1">12ms</span>
+          </div>
+          <div class="step-row" data-step="2">
+            <div class="step-indicator"><span class="step-icon">2</span></div>
+            <div class="step-info"><span class="step-label">2. Flood Threat Score</span><span class="step-sub">Hydraulic Severity Classifier</span></div>
+            <span class="step-ms" id="time-step-2">1.2ms</span>
+          </div>
+          <div class="step-row" data-step="3">
+            <div class="step-indicator"><span class="step-icon">3</span></div>
+            <div class="step-info"><span class="step-label">3. Threat Gate Check</span><span class="step-sub">Evacuation Threshold Verification</span></div>
+            <span class="step-ms" id="time-step-3">0.4ms</span>
+          </div>
+          <div class="step-row" data-step="4">
+            <div class="step-indicator"><span class="step-icon">4</span></div>
+            <div class="step-info"><span class="step-label">4. Road Graph Assembly</span><span class="step-sub">Adjacency List (100 Nodes, 247 Roads)</span></div>
+            <span class="step-ms" id="time-step-4">3.8ms</span>
+          </div>
+          <div class="step-row" data-step="5">
+            <div class="step-indicator"><span class="step-icon">5</span></div>
+            <div class="step-info"><span class="step-label">5. Mark Inundated Roads</span><span class="step-sub">Blocked (≥0.5m) / Risky (0.2m–0.49m)</span></div>
+            <span class="step-ms" id="time-step-5">2.1ms</span>
+          </div>
+          <div class="step-row" data-step="6">
+            <div class="step-indicator"><span class="step-icon">6</span></div>
+            <div class="step-info"><span class="step-label">6. BFS / DFS Reachability</span><span class="step-sub">Partition Connected Components</span></div>
+            <span class="step-ms" id="time-step-6">4.6ms</span>
+          </div>
+          <div class="step-row" data-step="7">
+            <div class="step-indicator"><span class="step-icon">7</span></div>
+            <div class="step-info"><span class="step-label">7. MinHeap Dijkstra Route</span><span class="step-sub">Shortest Safe Path to Open Shelter</span></div>
+            <span class="step-ms" id="time-step-7">5.2ms</span>
+          </div>
+          <div class="step-row" data-step="8">
+            <div class="step-indicator"><span class="step-icon">8</span></div>
+            <div class="step-info"><span class="step-label">8. Auto NGO Rescue Triage</span><span class="step-sub">MinHeap Priority -(Risk × Pop)</span></div>
+            <span class="step-ms" id="time-step-8">6.8ms</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. EVACUATION ROUTE CARD -->
+      <section class="card card-route" id="card-route-section" aria-labelledby="route-heading">
+        <div class="card-header-row">
+          <h3 id="route-heading" class="card-title text-success">Recommended Safe Evacuation Path</h3>
+          <span class="badge badge-success badge-sm">Min-Cost Safe</span>
+        </div>
+
+        <div class="shelter-target-info">
+          <div class="shelter-icon-pill">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="shelter-target-text">
+            <strong id="route-destination-name">Dr. D.Y. Patil Medical College Hospital & Complex</strong>
+            <span class="shelter-capacity" id="route-destination-sub">Elevated Ground (574m) • Capacity: 3,500 Evacuees</span>
+          </div>
+        </div>
+
+        <!-- Walk / Vehicle Mode Tabs -->
+        <div class="eta-tabs-row">
+          <button class="eta-tab active" id="tab-eta-drive" data-mode="drive">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+            <div class="eta-tab-text">
+              <span class="eta-mode">Vehicle Transit</span>
+              <strong class="eta-time" id="val-eta-drive">5.4 mins</strong>
+            </div>
+          </button>
+          <button class="eta-tab" id="tab-eta-walk" data-mode="walk">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 16 4-4 4 4"/><path d="m14 14 3-3 3 3"/><path d="M14 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/><path d="M4 22v-4l4-4 2 2v6"/><path d="M18 22v-4l-3-3 1-3 4 2v8"/></svg>
+            <div class="eta-tab-text">
+              <span class="eta-mode">Walking Pace</span>
+              <strong class="eta-time" id="val-eta-walk">30.5 mins</strong>
+            </div>
+          </button>
+        </div>
+
+        <div class="distance-metric-strip">
+          <span>Total Passable Distance:</span>
+          <strong class="font-mono text-success" id="val-route-distance">2.29 km</strong>
+        </div>
+
+        <!-- Waypoint Step List with Hover Segment Highlighting -->
+        <div class="route-steps-wrapper">
+          <div class="steps-title-row">
+            <span>Waypoint Guidance:</span>
+            <button id="btn-start-navigation" class="btn btn-primary btn-sm">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              Start Navigation
+            </button>
+          </div>
+          <ol class="step-guide-list" id="route-steps-list">
+            <!-- Populated dynamically -->
+          </ol>
+        </div>
+      </section>
+
+      <!-- 4. REACHABILITY DONUT CARD -->
+      <section class="card card-reachability" aria-labelledby="reachability-heading">
+        <div class="card-header-row">
+          <h3 id="reachability-heading" class="card-title">Network Connectivity & Flood Barrier</h3>
+          <span class="badge badge-info badge-sm">BFS Partition</span>
+        </div>
+        <div class="reachability-body">
+          <div class="donut-chart-box">
+            <svg class="donut-svg" viewBox="0 0 80 80" aria-label="Reachability ratio chart">
+              <circle class="donut-ring-bg" cx="40" cy="40" r="32" />
+              <circle class="donut-ring-fill" id="donut-fill-reachable" cx="40" cy="40" r="32" stroke-dasharray="201.06" stroke-dashoffset="30" />
+            </svg>
+            <div class="donut-center-label">
+              <span class="donut-pct" id="donut-reachable-pct">94%</span>
+              <span class="donut-sub">Navigable</span>
+            </div>
+          </div>
+          <div class="reachability-stats-list">
+            <div class="reach-stat-item">
+              <span class="dot-indicator dot-success"></span>
+              <span class="reach-stat-label">Reachable Locations:</span>
+              <strong class="reach-stat-val text-success" id="val-reachable-count">94</strong>
+            </div>
+            <div class="reach-stat-item">
+              <span class="dot-indicator dot-danger"></span>
+              <span class="reach-stat-label">Stranded / Cut-Off:</span>
+              <strong class="reach-stat-val text-danger" id="val-stranded-count">6</strong>
+            </div>
+            <div class="reach-stat-item">
+              <span class="dot-indicator dot-danger"></span>
+              <span class="reach-stat-label">Submerged Roads (≥0.5m):</span>
+              <strong class="reach-stat-val text-danger" id="val-flooded-roads-count">14</strong>
+            </div>
+            <div class="reach-stat-item">
+              <span class="dot-indicator dot-warning"></span>
+              <span class="reach-stat-label">Caution Roads (0.2–0.49m):</span>
+              <strong class="reach-stat-val text-warning" id="val-risky-roads-count">22</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. RESCUE REQUESTS CARD (NGO PRIORITY QUEUE) -->
+      <section class="card card-dispatch" id="card-dispatch-section" aria-labelledby="dispatch-heading">
+        <div class="card-header-row">
+          <div>
+            <h3 id="dispatch-heading" class="card-title text-blue">Stranded Rescue Missions</h3>
+            <span class="card-sublabel">MinHeap Priority: -(Risk × Population)</span>
+          </div>
+          <span class="badge badge-blue badge-sm" id="badge-active-dispatches">0 Active</span>
+        </div>
+        <div class="dispatch-queue-list" id="dispatch-queue-list">
+          <div class="empty-state">
+            <svg class="icon-empty" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <p>No cut-off neighborhoods detected. All sectors retain accessible shelter ingress routes.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. MULTI-TIMESTEP SIMULATION CARD -->
+      <section class="card card-simulation" aria-labelledby="sim-heading">
+        <div class="card-header-row">
+          <h3 id="sim-heading" class="card-title">Storm Progression Simulator</h3>
+          <span class="badge badge-secondary badge-sm" id="badge-sim-status">Manual / Cycle</span>
+        </div>
+
+        <div class="sim-timeline-control">
+          <div class="sim-step-tabs">
+            <button class="btn-sim-tab" data-step="0">T+0h</button>
+            <button class="btn-sim-tab" data-step="1">T+1h</button>
+            <button class="btn-sim-tab active" data-step="2">T+2h</button>
+            <button class="btn-sim-tab" data-step="3">T+3h</button>
+            <button class="btn-sim-tab" data-step="4">T+4h</button>
+            <button class="btn-sim-tab" data-step="5">T+5h</button>
+          </div>
+          <input type="range" min="0" max="5" step="1" value="2" id="slider-sim-timeline" class="slider-timeline" />
+        </div>
+
+        <div class="sim-actions-row mt-2">
+          <button id="btn-sim-play" class="btn btn-secondary btn-sm">
+            <svg class="icon-inline" id="icon-sim-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <span id="text-sim-play">Play Surge Cycle</span>
+          </button>
+          <button id="btn-sim-step" class="btn btn-chip btn-sm">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            Next Step
+          </button>
+          <button id="btn-sim-reset" class="btn btn-chip btn-sm">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            Reset
+          </button>
+        </div>
+      </section>
+
+      <!-- 7. EXPLAIN MODE (COLLAPSIBLE DSA TRACES) -->
+      <details class="card card-explain" id="details-explain">
+        <summary class="explain-summary-bar">
+          <div class="explain-summary-left">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <strong>Explain Mode (Pure DSA Traces)</strong>
+          </div>
+          <span class="chevron-indicator">▼</span>
+        </summary>
+        <div class="explain-body">
+          <div class="explain-tabs-nav">
+            <button class="explain-tab active" data-tab="dijkstra">Dijkstra Heap</button>
+            <button class="explain-tab" data-tab="heap">Rescue MinHeap</button>
+            <button class="explain-tab" data-tab="bfs">BFS Queue</button>
+            <button class="explain-tab" data-tab="dfs">DFS Stack</button>
+          </div>
+          <pre id="explain-trace-log" class="trace-code-box">// DSA runtime traces populate on telemetry cycle</pre>
+        </div>
+      </details>
+    </div>
+  </aside>
+
+  <!-- Bottom-Left Map Legend & Controls Overlay -->
+  <div class="map-legend-card" role="region" aria-label="Map symbology legend">
+    <div class="legend-header">
+      <span class="legend-title">Symbology</span>
+      <button class="btn-legend-minimize" id="btn-legend-toggle" aria-label="Toggle legend visibility">▾</button>
+    </div>
+    <div class="legend-body" id="legend-body">
+      <div class="legend-item">
+        <span class="legend-line line-route"></span>
+        <span>Safe Route (Flowing Green)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-line line-ngo"></span>
+        <span>NGO Rescue Path (Blue)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-line line-normal"></span>
+        <span>Dry Road (Passable)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-line line-risky"></span>
+        <span>Caution (0.2m–0.49m)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-line line-flooded"></span>
+        <span>Submerged (≥0.5m Dashed)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-pin pin-shelter"></span>
+        <span>Designated Safe Shelter</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-pin pin-ngo"></span>
+        <span>NGO Deployment Base</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-pin pin-stranded"></span>
+        <span>Stranded Sector (Isolated)</span>
+      </div>
+
+      <div class="legend-toggles-divider"></div>
+
+      <!-- Map Overlays & Dijkstra Replay -->
+      <div class="legend-controls-group">
+        <label class="toggle-control">
+          <input type="checkbox" id="toggle-traffic-layer" />
+          <span>Google TrafficLayer</span>
+        </label>
+        <label class="toggle-control">
+          <input type="checkbox" id="toggle-bfs-reach" checked />
+          <span>BFS Reach Overlay</span>
+        </label>
+        <label class="toggle-control">
+          <input type="checkbox" id="toggle-all-nodes" />
+          <span>Show All 100 Nodes</span>
+        </label>
+      </div>
+
+      <div class="dijkstra-replay-strip mt-2">
+        <div class="replay-btn-row">
+          <button id="btn-replay-dijkstra" class="btn btn-secondary btn-xs btn-block">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Animate Dijkstra
+          </button>
+        </div>
+        <div class="replay-speed-row mt-1">
+          <span class="text-xs text-muted">Speed:</span>
+          <input type="range" id="slider-replay-speed" min="40" max="500" step="20" value="180" class="slider-xs" />
+          <span class="text-xs font-mono" id="val-replay-speed">180ms</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Center (Bottom-Center) -->
+  <div id="toast-container" class="toast-shelf" aria-live="polite" role="status"></div>
+
+  <!-- Injected API Key configuration -->
+  <script>
+    window.GOOGLE_MAPS_API_KEY = "__GOOGLE_MAPS_API_KEY__";
+  </script>
+  <script src="/app.js"></script>
+</body>
+</html>

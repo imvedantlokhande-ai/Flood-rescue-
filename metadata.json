@@ -1,0 +1,6 @@
+{
+  "name": "Flood Evacuation Route Planner (DSA)",
+  "description": "Comprehensive Data Structures and Algorithms project for flood evacuation route planning with custom Graph, Min-Heap, Queue, Stack, BFS, DFS, and Dijkstra implementations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

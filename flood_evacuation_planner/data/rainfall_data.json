@@ -1,0 +1,83 @@
+{
+  "scenario_name": "Tropical Cyclone Storm Surge Event - Level 3",
+  "timestamp": "2026-10-07T08:00:00Z",
+  "rainfall_mm_per_hr": 48.5,
+  "rainfall_last_24h_mm": 135.0,
+  "soil_saturation_pct": 89.0,
+  "river_level_above_normal_m": 2.6,
+  "default_water_level_m": 0.15,
+  "water_levels_by_road": {
+    "RD_02": 0.75,
+    "RD_06": 0.65,
+    "RD_08": 0.90,
+    "RD_09": 1.20,
+    "RD_11": 0.85,
+    "RD_19": 1.10,
+    "RD_20": 1.40,
+    "RD_27": 0.70,
+    "RD_01": 0.35,
+    "RD_04": 0.40,
+    "RD_10": 0.38,
+    "RD_12": 0.25,
+    "RD_07": 0.42,
+    "RD_03": 0.10,
+    "RD_05": 0.12,
+    "RD_13": 0.05,
+    "RD_14": 0.00,
+    "RD_15": 0.08,
+    "RD_16": 0.02,
+    "RD_17": 0.18,
+    "RD_18": 0.05,
+    "RD_21": 0.10,
+    "RD_22": 0.15,
+    "RD_23": 0.08,
+    "RD_24": 0.05,
+    "RD_25": 0.02,
+    "RD_26": 0.00,
+    "RD_28": 0.04,
+    "RD_29": 0.00,
+    "RD_30": 0.00
+  },
+  "simulation_timesteps": [
+    {
+      "step": 0,
+      "time_label": "T+0h (Onset)",
+      "rainfall_mm_per_hr": 14.0,
+      "rainfall_last_24h_mm": 35.0,
+      "water_level_multiplier": 0.25,
+      "description": "Initial continuous rain, low-lying drainage gutters filling up."
+    },
+    {
+      "step": 1,
+      "time_label": "T+1h (Moderate Storm)",
+      "rainfall_mm_per_hr": 28.0,
+      "rainfall_last_24h_mm": 65.0,
+      "water_level_multiplier": 0.55,
+      "description": "Estuary and river walk gutters overflowing; coastal docks partially flooded."
+    },
+    {
+      "step": 2,
+      "time_label": "T+2h (Severe Downpour)",
+      "rainfall_mm_per_hr": 48.5,
+      "rainfall_last_24h_mm": 135.0,
+      "water_level_multiplier": 1.0,
+      "description": "River underpass and delta marsh completely impassable; commercial center under alert."
+    },
+    {
+      "step": 3,
+      "time_label": "T+3h (Flash Flood Peak)",
+      "rainfall_mm_per_hr": 68.0,
+      "rainfall_last_24h_mm": 195.0,
+      "water_level_multiplier": 1.5,
+      "description": "Downtown arterial routes flooded; lower waterfront districts completely cut off."
+    },
+    {
+      "step": 4,
+      "time_label": "T+4h (Extreme Inundation)",
+      "rainfall_mm_per_hr": 85.0,
+      "rainfall_last_24h_mm": 240.0,
+      "water_level_multiplier": 2.1,
+      "description": "Catastrophic flooding; only elevated ridge corridors and north shelters accessible."
+    }
+  ]
+}

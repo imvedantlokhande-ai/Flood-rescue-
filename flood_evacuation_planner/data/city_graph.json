@@ -1,0 +1,3281 @@
+{
+  "city_name": "Pimpri-Chinchwad (PCMC), Pune",
+  "center_coordinates": {
+    "lat": 18.6274,
+    "lng": 73.8016
+  },
+  "river_basin": "Pavana & Mula River Basin",
+  "total_nodes": 100,
+  "total_roads": 247,
+  "data_sources": {
+    "roads": "OpenStreetMap Overpass API (highway extract)",
+    "elevation": "Open-Meteo STRM 90m Elevation API (cached)",
+    "candidate_shelters": "OSM Amenity (hospitals, stadiums, schools)",
+    "distance_metric": "Custom Spherical Haversine (km)"
+  },
+  "locations": [
+    {
+      "id": "NODE_001",
+      "name": "Old Sangvi Riverfront Bridge",
+      "lat": 18.5772,
+      "lng": 73.8185,
+      "elevation_m": 554.0,
+      "population": 7200,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_002",
+      "name": "Dapodi Confluence Checkpoint",
+      "lat": 18.5834,
+      "lng": 73.8341,
+      "elevation_m": 561.0,
+      "population": 5400,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_003",
+      "name": "New Sangvi Shitala Nagar",
+      "lat": 18.5856,
+      "lng": 73.8122,
+      "elevation_m": 562.0,
+      "population": 9800,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_004",
+      "name": "Pimple Gurav Kate Puram",
+      "lat": 18.5925,
+      "lng": 73.8198,
+      "elevation_m": 558.0,
+      "population": 8600,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_005",
+      "name": "Kashid Park Pavana Embankment",
+      "lat": 18.5891,
+      "lng": 73.8054,
+      "elevation_m": 567.0,
+      "population": 6100,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_006",
+      "name": "Pimple Saudagar Linear Garden",
+      "lat": 18.5984,
+      "lng": 73.7932,
+      "elevation_m": 571.0,
+      "population": 12500,
+      "is_safe_zone": false,
+      "type": "commercial"
+    },
+    {
+      "id": "NODE_007",
+      "name": "Govind Garden Chowk",
+      "lat": 18.5942,
+      "lng": 73.7915,
+      "elevation_m": 563.0,
+      "population": 4200,
+      "is_safe_zone": false,
+      "type": "junction"
+    },
+    {
+      "id": "NODE_008",
+      "name": "Rose Icon / Kunal Icon Junction",
+      "lat": 18.5998,
+      "lng": 73.7876,
+      "elevation_m": 568.0,
+      "population": 9200,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_009",
+      "name": "Jagtap Dairy Interchange",
+      "lat": 18.5912,
+      "lng": 73.7824,
+      "elevation_m": 566.0,
+      "population": 3100,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "NODE_010",
+      "name": "Wakad Kaspate Vasti",
+      "lat": 18.5958,
+      "lng": 73.7742,
+      "elevation_m": 566.0,
+      "population": 14200,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_011",
+      "name": "Wakad Datta Mandir Chowk",
+      "lat": 18.6015,
+      "lng": 73.7658,
+      "elevation_m": 572.0,
+      "population": 8900,
+      "is_safe_zone": false,
+      "type": "junction"
+    },
+    {
+      "id": "NODE_012",
+      "name": "Wakad Bridge / Hinjawadi Flyover",
+      "lat": 18.5982,
+      "lng": 73.7534,
+      "elevation_m": 568.0,
+      "population": 6400,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "NODE_013",
+      "name": "Bhumkar Chowk Highway Hub",
+      "lat": 18.6062,
+      "lng": 73.7512,
+      "elevation_m": 587.0,
+      "population": 7800,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "NODE_014",
+      "name": "Dange Chowk Master Hub",
+      "lat": 18.6145,
+      "lng": 73.7708,
+      "elevation_m": 578.0,
+      "population": 11000,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "NODE_015",
+      "name": "Thergaon Boat Club River Road",
+      "lat": 18.6112,
+      "lng": 73.7842,
+      "elevation_m": 571.0,
+      "population": 7900,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_016",
+      "name": "Rahatani Phata / Jyoti School",
+      "lat": 18.6084,
+      "lng": 73.7925,
+      "elevation_m": 558.0,
+      "population": 8500,
+      "is_safe_zone": false,
+      "type": "junction"
+    },
+    {
+      "id": "NODE_017",
+      "name": "Kalewadi Phata Interchange",
+      "lat": 18.6132,
+      "lng": 73.7984,
+      "elevation_m": 564.0,
+      "population": 6200,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "NODE_018",
+      "name": "Nadnagar Kalewadi Bridge",
+      "lat": 18.6185,
+      "lng": 73.7915,
+      "elevation_m": 571.0,
+      "population": 6700,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_019",
+      "name": "Pimpri Saudagar Link Road",
+      "lat": 18.6212,
+      "lng": 73.8012,
+      "elevation_m": 568.0,
+      "population": 9400,
+      "is_safe_zone": false,
+      "type": "commercial"
+    },
+    {
+      "id": "NODE_020",
+      "name": "Pimpri Railway Station Square",
+      "lat": 18.6274,
+      "lng": 73.8016,
+      "elevation_m": 565.0,
+      "population": 11500,
+      "is_safe_zone": false,
+      "type": "transit_hub"
+    },
+    {
+      "id": "NODE_021",
+      "name": "PCMC Municipal Corporation HQ",
+      "lat": 18.6288,
+      "lng": 73.8124,
+      "elevation_m": 583.0,
+      "population": 4500,
+      "is_safe_zone": false,
+      "type": "civic_hub"
+    },
+    {
+      "id": "NODE_022",
+      "name": "Nehrunagar Bus Terminal",
+      "lat": 18.6364,
+      "lng": 73.8242,
+      "elevation_m": 583.0,
+      "population": 13200,
+      "is_safe_zone": false,
+      "type": "transit_hub"
+    },
+    {
+      "id": "NODE_023",
+      "name": "Hindustan Antibiotics Colony",
+      "lat": 18.6315,
+      "lng": 73.8188,
+      "elevation_m": 582.0,
+      "population": 5800,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_024",
+      "name": "Sant Tukaram Nagar Metro Station",
+      "lat": 18.6234,
+      "lng": 73.8208,
+      "elevation_m": 582.0,
+      "population": 8800,
+      "is_safe_zone": false,
+      "type": "transit_hub"
+    },
+    {
+      "id": "NODE_025",
+      "name": "Kasarwadi Confluence Basin",
+      "lat": 18.6115,
+      "lng": 73.8256,
+      "elevation_m": 562.0,
+      "population": 7100,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_026",
+      "name": "Nashik Phata Flyover Interchange",
+      "lat": 18.6172,
+      "lng": 73.8298,
+      "elevation_m": 567.0,
+      "population": 4300,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "NODE_027",
+      "name": "Bhosari MIDC Telefunken Chowk",
+      "lat": 18.6324,
+      "lng": 73.8425,
+      "elevation_m": 603.0,
+      "population": 6800,
+      "is_safe_zone": false,
+      "type": "industrial"
+    },
+    {
+      "id": "NODE_028",
+      "name": "Bhosari Gaonthan / Landewadi",
+      "lat": 18.6255,
+      "lng": 73.8492,
+      "elevation_m": 589.0,
+      "population": 16400,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_029",
+      "name": "Bhosari Dighi Road Junction",
+      "lat": 18.6188,
+      "lng": 73.8564,
+      "elevation_m": 592.0,
+      "population": 8200,
+      "is_safe_zone": false,
+      "type": "junction"
+    },
+    {
+      "id": "NODE_030",
+      "name": "Indrayani River Basin / Moshi Toll",
+      "lat": 18.6652,
+      "lng": 73.8495,
+      "elevation_m": 584.0,
+      "population": 6300,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_031",
+      "name": "Moshi Spine Road Highway Hub",
+      "lat": 18.6575,
+      "lng": 73.8345,
+      "elevation_m": 601.0,
+      "population": 9100,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "NODE_032",
+      "name": "Chikhali Krishna Nagar",
+      "lat": 18.6598,
+      "lng": 73.8142,
+      "elevation_m": 611.0,
+      "population": 12800,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_033",
+      "name": "Kudalwadi Scrap Market Lowland",
+      "lat": 18.6525,
+      "lng": 73.8188,
+      "elevation_m": 612.0,
+      "population": 7400,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_034",
+      "name": "Talwade IT Park Gateway",
+      "lat": 18.6725,
+      "lng": 73.7915,
+      "elevation_m": 598.0,
+      "population": 8500,
+      "is_safe_zone": false,
+      "type": "commercial"
+    },
+    {
+      "id": "NODE_035",
+      "name": "Rupinagar / Triveni Nagar",
+      "lat": 18.6622,
+      "lng": 73.7885,
+      "elevation_m": 608.0,
+      "population": 11200,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_036",
+      "name": "Yamuna Nagar Sports Complex",
+      "lat": 18.6515,
+      "lng": 73.7842,
+      "elevation_m": 591.0,
+      "population": 10500,
+      "is_safe_zone": false,
+      "type": "civic_hub"
+    },
+    {
+      "id": "NODE_037",
+      "name": "Nigdi Pradhikaran Madhukar Pawle",
+      "lat": 18.6472,
+      "lng": 73.7715,
+      "elevation_m": 596.0,
+      "population": 8900,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "NODE_038",
+      "name": "Akurdi Railway Station Chowk",
+      "lat": 18.6485,
+      "lng": 73.7824,
+      "elevation_m": 580.0,
+      "population": 11900,
+      "is_safe_zone": false,
+      "type": "transit_hub"
+    },
+    {
+      "id": "NODE_039",
+      "name": "Khandoba Mal Akurdi",
+      "lat": 18.6412,
+      "lng": 73.7895,
+      "elevation_m": 570.0,
+      "population": 7600,
+      "is_safe_zone": false,
+      "type": "junction"
+    },
+    {
+      "id": "NODE_040",
+      "name": "Chinchwad Station / Mohan Nagar",
+      "lat": 18.6348,
+      "lng": 73.7845,
+      "elevation_m": 573.0,
+      "population": 14500,
+      "is_safe_zone": false,
+      "type": "transit_hub"
+    },
+    {
+      "id": "NODE_041",
+      "name": "Chinchwad Gaon Riverside",
+      "lat": 18.6295,
+      "lng": 73.7785,
+      "elevation_m": 572.0,
+      "population": 9300,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_042",
+      "name": "Thergaon Dange Link Junction",
+      "lat": 18.6242,
+      "lng": 73.7752,
+      "elevation_m": 569.0,
+      "population": 8100,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_043",
+      "name": "Walhekarwadi Main Square",
+      "lat": 18.6325,
+      "lng": 73.7624,
+      "elevation_m": 571.0,
+      "population": 10300,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_044",
+      "name": "Ravet Mukai Chowk Highway Terminus",
+      "lat": 18.6482,
+      "lng": 73.7425,
+      "elevation_m": 570.0,
+      "population": 8200,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "NODE_045",
+      "name": "Ravet Pavana Bund / Pumping Station",
+      "lat": 18.6415,
+      "lng": 73.7485,
+      "elevation_m": 560.0,
+      "population": 6400,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_046",
+      "name": "Shinde Vasti Ravet",
+      "lat": 18.6362,
+      "lng": 73.7542,
+      "elevation_m": 557.0,
+      "population": 7900,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_047",
+      "name": "Punawale Highway Junction",
+      "lat": 18.6185,
+      "lng": 73.7475,
+      "elevation_m": 580.0,
+      "population": 8600,
+      "is_safe_zone": false,
+      "type": "junction"
+    },
+    {
+      "id": "NODE_048",
+      "name": "Tathawade Ashok Leyland Chowk",
+      "lat": 18.6125,
+      "lng": 73.7548,
+      "elevation_m": 577.0,
+      "population": 7400,
+      "is_safe_zone": false,
+      "type": "commercial"
+    },
+    {
+      "id": "NODE_049",
+      "name": "Aditya Birla Memorial Hospital Sector",
+      "lat": 18.6215,
+      "lng": 73.7845,
+      "elevation_m": 569.0,
+      "population": 5100,
+      "is_safe_zone": false,
+      "type": "institutional"
+    },
+    {
+      "id": "NODE_050",
+      "name": "Elpro City Square / Chinchwad MIDC",
+      "lat": 18.6322,
+      "lng": 73.7985,
+      "elevation_m": 567.0,
+      "population": 9600,
+      "is_safe_zone": false,
+      "type": "commercial"
+    },
+    {
+      "id": "NODE_051",
+      "name": "Telco / Tata Motors Factory Gate",
+      "lat": 18.6445,
+      "lng": 73.8152,
+      "elevation_m": 608.0,
+      "population": 8200,
+      "is_safe_zone": false,
+      "type": "industrial"
+    },
+    {
+      "id": "NODE_052",
+      "name": "Spine Road Sambhaji Chowk",
+      "lat": 18.6524,
+      "lng": 73.8052,
+      "elevation_m": 593.0,
+      "population": 6500,
+      "is_safe_zone": false,
+      "type": "arterial_hub"
+    },
+    {
+      "id": "NODE_053",
+      "name": "Pradhikaran Sector 27 High Ridge",
+      "lat": 18.6565,
+      "lng": 73.7654,
+      "elevation_m": 606.0,
+      "population": 5800,
+      "is_safe_zone": false,
+      "type": "highland"
+    },
+    {
+      "id": "NODE_054",
+      "name": "Bhakti Shakti Circle High Ridge",
+      "lat": 18.6625,
+      "lng": 73.7702,
+      "elevation_m": 606.0,
+      "population": 6200,
+      "is_safe_zone": false,
+      "type": "highland"
+    },
+    {
+      "id": "NODE_055",
+      "name": "Appu Ghar / Durga Devi Hilltop",
+      "lat": 18.6585,
+      "lng": 73.7785,
+      "elevation_m": 597.0,
+      "population": 3100,
+      "is_safe_zone": false,
+      "type": "highland"
+    },
+    {
+      "id": "NODE_056",
+      "name": "Moshi Alandi Road Confluence",
+      "lat": 18.6592,
+      "lng": 73.8642,
+      "elevation_m": 606.0,
+      "population": 7300,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_057",
+      "name": "Charholi Pavana Ridge",
+      "lat": 18.6425,
+      "lng": 73.8745,
+      "elevation_m": 609.0,
+      "population": 6500,
+      "is_safe_zone": false,
+      "type": "residential"
+    },
+    {
+      "id": "NODE_058",
+      "name": "Dighi Hills Ordnance Depot",
+      "lat": 18.6115,
+      "lng": 73.8685,
+      "elevation_m": 581.0,
+      "population": 4200,
+      "is_safe_zone": false,
+      "type": "highland"
+    },
+    {
+      "id": "NODE_059",
+      "name": "Bopkhel Mula River Basin",
+      "lat": 18.5915,
+      "lng": 73.8542,
+      "elevation_m": 563.0,
+      "population": 5800,
+      "is_safe_zone": false,
+      "type": "riverfront_lowland"
+    },
+    {
+      "id": "NODE_060",
+      "name": "CME College of Military Engineering Gate",
+      "lat": 18.5885,
+      "lng": 73.8395,
+      "elevation_m": 565.0,
+      "population": 4100,
+      "is_safe_zone": false,
+      "type": "institutional"
+    },
+    {
+      "id": "NODE_061",
+      "name": "Pimple-Bhumkar Crossway",
+      "lat": 18.60103,
+      "lng": 73.78658,
+      "elevation_m": 568.0,
+      "population": 3120,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_062",
+      "name": "Govind-Nadnagar Crossway",
+      "lat": 18.60817,
+      "lng": 73.79067,
+      "elevation_m": 562.0,
+      "population": 3240,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_063",
+      "name": "Wakad-Hindustan Crossway",
+      "lat": 18.61393,
+      "lng": 73.79452,
+      "elevation_m": 566.0,
+      "population": 3360,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_064",
+      "name": "Bhumkar-Bhosari Crossway",
+      "lat": 18.61434,
+      "lng": 73.79889,
+      "elevation_m": 561.0,
+      "population": 3480,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_065",
+      "name": "Rahatani-Kudalwadi Crossway",
+      "lat": 18.62853,
+      "lng": 73.80622,
+      "elevation_m": 580.0,
+      "population": 3600,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_066",
+      "name": "Pimpri-Akurdi Crossway",
+      "lat": 18.63429,
+      "lng": 73.79372,
+      "elevation_m": 569.0,
+      "population": 3720,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_067",
+      "name": "Nehrunagar-Walhekarwadi Crossway",
+      "lat": 18.63576,
+      "lng": 73.79481,
+      "elevation_m": 569.0,
+      "population": 3840,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_068",
+      "name": "Kasarwadi-Tathawade Crossway",
+      "lat": 18.61398,
+      "lng": 73.78991,
+      "elevation_m": 568.0,
+      "population": 3960,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_069",
+      "name": "Bhosari-Pradhikaran Crossway",
+      "lat": 18.64182,
+      "lng": 73.80548,
+      "elevation_m": 588.0,
+      "population": 4080,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_070",
+      "name": "Moshi-Dighi Crossway",
+      "lat": 18.63341,
+      "lng": 73.84982,
+      "elevation_m": 600.0,
+      "population": 4200,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_071",
+      "name": "Talwade-New Crossway",
+      "lat": 18.62705,
+      "lng": 73.80186,
+      "elevation_m": 567.0,
+      "population": 4320,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_072",
+      "name": "Nigdi-Rose Crossway",
+      "lat": 18.62243,
+      "lng": 73.78124,
+      "elevation_m": 559.0,
+      "population": 4440,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_073",
+      "name": "Chinchwad-Bhumkar Crossway",
+      "lat": 18.62134,
+      "lng": 73.76966,
+      "elevation_m": 569.0,
+      "population": 4560,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_074",
+      "name": "Walhekarwadi-Nadnagar Crossway",
+      "lat": 18.62748,
+      "lng": 73.77722,
+      "elevation_m": 564.0,
+      "population": 4680,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_075",
+      "name": "Shinde-Hindustan Crossway",
+      "lat": 18.63515,
+      "lng": 73.78498,
+      "elevation_m": 580.0,
+      "population": 4800,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_076",
+      "name": "Aditya-Bhosari Crossway",
+      "lat": 18.62292,
+      "lng": 73.81493,
+      "elevation_m": 580.0,
+      "population": 4920,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_077",
+      "name": "Spine-Kudalwadi Crossway",
+      "lat": 18.65053,
+      "lng": 73.81145,
+      "elevation_m": 605.0,
+      "population": 5040,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_078",
+      "name": "Appu-Akurdi Crossway",
+      "lat": 18.652,
+      "lng": 73.78177,
+      "elevation_m": 587.0,
+      "population": 5160,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_079",
+      "name": "Dighi-Walhekarwadi Crossway",
+      "lat": 18.6223,
+      "lng": 73.81743,
+      "elevation_m": 578.0,
+      "population": 5280,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_080",
+      "name": "Old-Tathawade Crossway",
+      "lat": 18.59668,
+      "lng": 73.78747,
+      "elevation_m": 569.0,
+      "population": 5400,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_081",
+      "name": "Pimple-Pradhikaran Crossway",
+      "lat": 18.62617,
+      "lng": 73.7915,
+      "elevation_m": 559.0,
+      "population": 5520,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_082",
+      "name": "Govind-Dighi Crossway",
+      "lat": 18.60283,
+      "lng": 73.828,
+      "elevation_m": 563.0,
+      "population": 5640,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_083",
+      "name": "Wakad-New Crossway",
+      "lat": 18.58901,
+      "lng": 73.79213,
+      "elevation_m": 567.0,
+      "population": 5760,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_084",
+      "name": "Bhumkar-Rose Crossway",
+      "lat": 18.60119,
+      "lng": 73.77025,
+      "elevation_m": 570.0,
+      "population": 5880,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_085",
+      "name": "Rahatani-Bhumkar Crossway",
+      "lat": 18.60704,
+      "lng": 73.77383,
+      "elevation_m": 582.0,
+      "population": 6000,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_086",
+      "name": "Pimpri-Nadnagar Crossway",
+      "lat": 18.62138,
+      "lng": 73.79764,
+      "elevation_m": 556.0,
+      "population": 6120,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_087",
+      "name": "Nehrunagar-Hindustan Crossway",
+      "lat": 18.63586,
+      "lng": 73.82092,
+      "elevation_m": 595.0,
+      "population": 6240,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_088",
+      "name": "Kasarwadi-Bhosari Crossway",
+      "lat": 18.61904,
+      "lng": 73.83547,
+      "elevation_m": 584.0,
+      "population": 6360,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_089",
+      "name": "Bhosari-Kudalwadi Crossway",
+      "lat": 18.63767,
+      "lng": 73.8325,
+      "elevation_m": 596.0,
+      "population": 6480,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_090",
+      "name": "Moshi-Akurdi Crossway",
+      "lat": 18.65102,
+      "lng": 73.80876,
+      "elevation_m": 601.0,
+      "population": 6600,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_091",
+      "name": "Talwade-Walhekarwadi Crossway",
+      "lat": 18.65169,
+      "lng": 73.77878,
+      "elevation_m": 590.0,
+      "population": 6720,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_092",
+      "name": "Nigdi-Tathawade Crossway",
+      "lat": 18.63095,
+      "lng": 73.76482,
+      "elevation_m": 569.0,
+      "population": 6840,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_093",
+      "name": "Chinchwad-Pradhikaran Crossway",
+      "lat": 18.64765,
+      "lng": 73.77492,
+      "elevation_m": 597.0,
+      "population": 6960,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_094",
+      "name": "Walhekarwadi-Dighi Crossway",
+      "lat": 18.62306,
+      "lng": 73.81375,
+      "elevation_m": 580.0,
+      "population": 3080,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_095",
+      "name": "Shinde-New Crossway",
+      "lat": 18.61004,
+      "lng": 73.78139,
+      "elevation_m": 575.0,
+      "population": 3200,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "NODE_096",
+      "name": "Aditya-Rose Crossway",
+      "lat": 18.60867,
+      "lng": 73.78579,
+      "elevation_m": 571.0,
+      "population": 3320,
+      "is_safe_zone": false,
+      "type": "residential_connector"
+    },
+    {
+      "id": "SZ_01",
+      "name": "Dr. D.Y. Patil Medical College Hospital & Complex",
+      "lat": 18.6255,
+      "lng": 73.8232,
+      "elevation_m": 581.0,
+      "capacity": 3500,
+      "is_safe_zone": true,
+      "type": "shelter_hospital",
+      "population": 0
+    },
+    {
+      "id": "SZ_02",
+      "name": "Major Dhyan Chand National Sports Stadium",
+      "lat": 18.6415,
+      "lng": 73.829,
+      "elevation_m": 589.0,
+      "capacity": 5500,
+      "is_safe_zone": true,
+      "type": "shelter_stadium",
+      "population": 0
+    },
+    {
+      "id": "SZ_03",
+      "name": "Bhakti Shakti Hilltop Municipal High School Complex",
+      "lat": 18.6625,
+      "lng": 73.7702,
+      "elevation_m": 606.0,
+      "capacity": 4200,
+      "is_safe_zone": true,
+      "type": "shelter_highland",
+      "population": 0
+    },
+    {
+      "id": "SZ_04",
+      "name": "Aditya Birla Memorial Hospital High Emergency Pavilion",
+      "lat": 18.6215,
+      "lng": 73.7845,
+      "elevation_m": 569.0,
+      "capacity": 2800,
+      "is_safe_zone": true,
+      "type": "shelter_hospital",
+      "population": 0
+    }
+  ],
+  "roads": [
+    {
+      "id": "RD_001",
+      "from": "NODE_001",
+      "to": "NODE_003",
+      "distance_km": 1.15,
+      "name": "Old-New Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_002",
+      "from": "NODE_001",
+      "to": "NODE_004",
+      "distance_km": 1.71,
+      "name": "Old-Pimple Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_003",
+      "from": "NODE_001",
+      "to": "NODE_002",
+      "distance_km": 1.78,
+      "name": "Old-Dapodi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_004",
+      "from": "NODE_001",
+      "to": "NODE_005",
+      "distance_km": 1.91,
+      "name": "Old-Kashid Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_005",
+      "from": "NODE_002",
+      "to": "NODE_060",
+      "distance_km": 0.8,
+      "name": "Dapodi-CME Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_006",
+      "from": "NODE_002",
+      "to": "NODE_004",
+      "distance_km": 1.81,
+      "name": "Dapodi-Pimple Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_007",
+      "from": "NODE_002",
+      "to": "NODE_082",
+      "distance_km": 2.25,
+      "name": "Dapodi-Govind-Dighi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_008",
+      "from": "NODE_003",
+      "to": "NODE_005",
+      "distance_km": 0.82,
+      "name": "New-Kashid Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_009",
+      "from": "NODE_003",
+      "to": "NODE_004",
+      "distance_km": 1.11,
+      "name": "New-Pimple Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_010",
+      "from": "NODE_003",
+      "to": "NODE_083",
+      "distance_km": 2.15,
+      "name": "New-Wakad-New Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_011",
+      "from": "NODE_004",
+      "to": "NODE_082",
+      "distance_km": 1.44,
+      "name": "Pimple-Govind-Dighi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_012",
+      "from": "NODE_004",
+      "to": "NODE_005",
+      "distance_km": 1.56,
+      "name": "Pimple-Kashid Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_013",
+      "from": "NODE_005",
+      "to": "NODE_083",
+      "distance_km": 1.4,
+      "name": "Kashid-Wakad-New Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_014",
+      "from": "NODE_005",
+      "to": "NODE_007",
+      "distance_km": 1.57,
+      "name": "Kashid-Govind Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_015",
+      "from": "NODE_006",
+      "to": "NODE_007",
+      "distance_km": 0.5,
+      "name": "Pimple-Govind Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_016",
+      "from": "NODE_006",
+      "to": "NODE_008",
+      "distance_km": 0.61,
+      "name": "Pimple-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_017",
+      "from": "NODE_006",
+      "to": "NODE_080",
+      "distance_km": 0.63,
+      "name": "Pimple-Old-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_018",
+      "from": "NODE_006",
+      "to": "NODE_061",
+      "distance_km": 0.76,
+      "name": "Pimple-Pimple-Bhumkar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_019",
+      "from": "NODE_007",
+      "to": "NODE_080",
+      "distance_km": 0.51,
+      "name": "Govind-Old-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_020",
+      "from": "NODE_007",
+      "to": "NODE_083",
+      "distance_km": 0.58,
+      "name": "Govind-Wakad-New Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_021",
+      "from": "NODE_007",
+      "to": "NODE_008",
+      "distance_km": 0.75,
+      "name": "Govind-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_022",
+      "from": "NODE_008",
+      "to": "NODE_061",
+      "distance_km": 0.17,
+      "name": "Rose-Pimple-Bhumkar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_023",
+      "from": "NODE_008",
+      "to": "NODE_080",
+      "distance_km": 0.35,
+      "name": "Rose-Old-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_024",
+      "from": "NODE_009",
+      "to": "NODE_080",
+      "distance_km": 0.81,
+      "name": "Jagtap-Old-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_025",
+      "from": "NODE_009",
+      "to": "NODE_010",
+      "distance_km": 1.0,
+      "name": "Jagtap-Wakad Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_026",
+      "from": "NODE_007",
+      "to": "NODE_009",
+      "distance_km": 1.01,
+      "name": "Govind-Jagtap Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_027",
+      "from": "NODE_009",
+      "to": "NODE_083",
+      "distance_km": 1.05,
+      "name": "Jagtap-Wakad-New Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_028",
+      "from": "NODE_010",
+      "to": "NODE_084",
+      "distance_km": 0.73,
+      "name": "Wakad-Bhumkar-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_029",
+      "from": "NODE_010",
+      "to": "NODE_011",
+      "distance_km": 1.09,
+      "name": "Wakad-Wakad Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_030",
+      "from": "NODE_010",
+      "to": "NODE_085",
+      "distance_km": 1.25,
+      "name": "Wakad-Rahatani-Bhumkar Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_031",
+      "from": "NODE_011",
+      "to": "NODE_084",
+      "distance_km": 0.47,
+      "name": "Wakad-Bhumkar-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_032",
+      "from": "NODE_011",
+      "to": "NODE_085",
+      "distance_km": 1.05,
+      "name": "Wakad-Rahatani-Bhumkar Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_033",
+      "from": "NODE_011",
+      "to": "NODE_012",
+      "distance_km": 1.36,
+      "name": "Wakad-Wakad Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_034",
+      "from": "NODE_012",
+      "to": "NODE_013",
+      "distance_km": 0.92,
+      "name": "Wakad-Bhumkar Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_035",
+      "from": "NODE_012",
+      "to": "NODE_048",
+      "distance_km": 1.6,
+      "name": "Wakad-Tathawade Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_036",
+      "from": "NODE_012",
+      "to": "NODE_084",
+      "distance_km": 1.81,
+      "name": "Wakad-Bhumkar-Rose Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_037",
+      "from": "NODE_013",
+      "to": "NODE_048",
+      "distance_km": 0.8,
+      "name": "Bhumkar-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_038",
+      "from": "NODE_013",
+      "to": "NODE_047",
+      "distance_km": 1.42,
+      "name": "Bhumkar-Punawale Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_039",
+      "from": "NODE_011",
+      "to": "NODE_013",
+      "distance_km": 1.62,
+      "name": "Wakad-Bhumkar Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_040",
+      "from": "NODE_014",
+      "to": "NODE_073",
+      "distance_km": 0.77,
+      "name": "Dange-Chinchwad-Bhumkar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_041",
+      "from": "NODE_014",
+      "to": "NODE_085",
+      "distance_km": 0.89,
+      "name": "Dange-Rahatani-Bhumkar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_042",
+      "from": "NODE_014",
+      "to": "NODE_042",
+      "distance_km": 1.17,
+      "name": "Dange-Thergaon Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_043",
+      "from": "NODE_014",
+      "to": "NODE_095",
+      "distance_km": 1.22,
+      "name": "Dange-Shinde-New Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_044",
+      "from": "NODE_015",
+      "to": "NODE_095",
+      "distance_km": 0.32,
+      "name": "Thergaon-Shinde-New Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_045",
+      "from": "NODE_015",
+      "to": "NODE_096",
+      "distance_km": 0.33,
+      "name": "Thergaon-Aditya-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_046",
+      "from": "NODE_015",
+      "to": "NODE_068",
+      "distance_km": 0.68,
+      "name": "Thergaon-Kasarwadi-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_047",
+      "from": "NODE_015",
+      "to": "NODE_062",
+      "distance_km": 0.76,
+      "name": "Thergaon-Govind-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_048",
+      "from": "NODE_016",
+      "to": "NODE_062",
+      "distance_km": 0.2,
+      "name": "Rahatani-Govind-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_049",
+      "from": "NODE_016",
+      "to": "NODE_063",
+      "distance_km": 0.65,
+      "name": "Rahatani-Wakad-Hindustan Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_050",
+      "from": "NODE_016",
+      "to": "NODE_068",
+      "distance_km": 0.68,
+      "name": "Rahatani-Kasarwadi-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_051",
+      "from": "NODE_016",
+      "to": "NODE_096",
+      "distance_km": 0.71,
+      "name": "Rahatani-Aditya-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_052",
+      "from": "NODE_017",
+      "to": "NODE_064",
+      "distance_km": 0.14,
+      "name": "Kalewadi-Bhumkar-Bhosari Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_053",
+      "from": "NODE_017",
+      "to": "NODE_063",
+      "distance_km": 0.42,
+      "name": "Kalewadi-Wakad-Hindustan Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_054",
+      "from": "NODE_016",
+      "to": "NODE_017",
+      "distance_km": 0.82,
+      "name": "Rahatani-Kalewadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_055",
+      "from": "NODE_017",
+      "to": "NODE_068",
+      "distance_km": 0.9,
+      "name": "Kalewadi-Kasarwadi-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_056",
+      "from": "NODE_018",
+      "to": "NODE_068",
+      "distance_km": 0.53,
+      "name": "Nadnagar-Kasarwadi-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_057",
+      "from": "NODE_018",
+      "to": "NODE_063",
+      "distance_km": 0.6,
+      "name": "Nadnagar-Wakad-Hindustan Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_058",
+      "from": "NODE_018",
+      "to": "NODE_086",
+      "distance_km": 0.72,
+      "name": "Nadnagar-Pimpri-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_059",
+      "from": "NODE_018",
+      "to": "NODE_049",
+      "distance_km": 0.81,
+      "name": "Nadnagar-Aditya Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_060",
+      "from": "NODE_019",
+      "to": "NODE_086",
+      "distance_km": 0.38,
+      "name": "Pimpri-Pimpri-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_061",
+      "from": "NODE_019",
+      "to": "NODE_071",
+      "distance_km": 0.65,
+      "name": "Pimpri-Talwade-New Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_062",
+      "from": "NODE_019",
+      "to": "NODE_020",
+      "distance_km": 0.69,
+      "name": "Pimpri-Pimpri Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_063",
+      "from": "NODE_019",
+      "to": "NODE_064",
+      "distance_km": 0.8,
+      "name": "Pimpri-Bhumkar-Bhosari Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_064",
+      "from": "NODE_020",
+      "to": "NODE_071",
+      "distance_km": 0.05,
+      "name": "Pimpri-Talwade-New Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_065",
+      "from": "NODE_020",
+      "to": "NODE_065",
+      "distance_km": 0.5,
+      "name": "Pimpri-Rahatani-Kudalwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_066",
+      "from": "NODE_020",
+      "to": "NODE_050",
+      "distance_km": 0.63,
+      "name": "Pimpri-Elpro Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_067",
+      "from": "NODE_021",
+      "to": "NODE_065",
+      "distance_km": 0.65,
+      "name": "PCMC-Rahatani-Kudalwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_068",
+      "from": "NODE_021",
+      "to": "NODE_094",
+      "distance_km": 0.65,
+      "name": "PCMC-Walhekarwadi-Dighi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_069",
+      "from": "NODE_021",
+      "to": "NODE_076",
+      "distance_km": 0.71,
+      "name": "PCMC-Aditya-Bhosari Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_070",
+      "from": "NODE_021",
+      "to": "NODE_023",
+      "distance_km": 0.74,
+      "name": "PCMC-Hindustan Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_071",
+      "from": "NODE_022",
+      "to": "NODE_087",
+      "distance_km": 0.35,
+      "name": "Nehrunagar-Nehrunagar-Hindustan Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_072",
+      "from": "NODE_022",
+      "to": "SZ_02",
+      "distance_km": 0.76,
+      "name": "Nehrunagar-Major Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_073",
+      "from": "NODE_022",
+      "to": "NODE_023",
+      "distance_km": 0.79,
+      "name": "Nehrunagar-Hindustan Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_074",
+      "from": "NODE_022",
+      "to": "NODE_089",
+      "distance_km": 0.89,
+      "name": "Nehrunagar-Bhosari-Kudalwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_075",
+      "from": "NODE_023",
+      "to": "NODE_087",
+      "distance_km": 0.53,
+      "name": "Hindustan-Nehrunagar-Hindustan Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_076",
+      "from": "NODE_023",
+      "to": "SZ_01",
+      "distance_km": 0.81,
+      "name": "Hindustan-Dr. Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_077",
+      "from": "NODE_024",
+      "to": "SZ_01",
+      "distance_km": 0.34,
+      "name": "Sant-Dr. Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_078",
+      "from": "NODE_024",
+      "to": "NODE_079",
+      "distance_km": 0.38,
+      "name": "Sant-Dighi-Walhekarwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_079",
+      "from": "NODE_024",
+      "to": "NODE_076",
+      "distance_km": 0.62,
+      "name": "Sant-Aditya-Bhosari Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_080",
+      "from": "NODE_024",
+      "to": "NODE_094",
+      "distance_km": 0.74,
+      "name": "Sant-Walhekarwadi-Dighi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_081",
+      "from": "NODE_025",
+      "to": "NODE_026",
+      "distance_km": 0.77,
+      "name": "Kasarwadi-Nashik Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_082",
+      "from": "NODE_025",
+      "to": "NODE_082",
+      "distance_km": 1.0,
+      "name": "Kasarwadi-Govind-Dighi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_083",
+      "from": "NODE_025",
+      "to": "NODE_088",
+      "distance_km": 1.34,
+      "name": "Kasarwadi-Kasarwadi-Bhosari Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_084",
+      "from": "NODE_024",
+      "to": "NODE_025",
+      "distance_km": 1.42,
+      "name": "Sant-Kasarwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_085",
+      "from": "NODE_026",
+      "to": "NODE_088",
+      "distance_km": 0.63,
+      "name": "Nashik-Kasarwadi-Bhosari Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_086",
+      "from": "NODE_026",
+      "to": "SZ_01",
+      "distance_km": 1.16,
+      "name": "Nashik-Dr. Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_087",
+      "from": "NODE_024",
+      "to": "NODE_026",
+      "distance_km": 1.17,
+      "name": "Sant-Nashik Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_088",
+      "from": "NODE_027",
+      "to": "NODE_070",
+      "distance_km": 0.78,
+      "name": "Bhosari-Moshi-Dighi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_089",
+      "from": "NODE_027",
+      "to": "NODE_028",
+      "distance_km": 1.04,
+      "name": "Bhosari-Bhosari Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_090",
+      "from": "NODE_027",
+      "to": "NODE_089",
+      "distance_km": 1.21,
+      "name": "Bhosari-Bhosari-Kudalwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_091",
+      "from": "NODE_027",
+      "to": "NODE_088",
+      "distance_km": 1.66,
+      "name": "Bhosari-Kasarwadi-Bhosari Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_092",
+      "from": "NODE_028",
+      "to": "NODE_070",
+      "distance_km": 0.88,
+      "name": "Bhosari-Moshi-Dighi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_093",
+      "from": "NODE_028",
+      "to": "NODE_029",
+      "distance_km": 1.06,
+      "name": "Bhosari-Bhosari Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_094",
+      "from": "NODE_028",
+      "to": "NODE_088",
+      "distance_km": 1.61,
+      "name": "Bhosari-Kasarwadi-Bhosari Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_095",
+      "from": "NODE_029",
+      "to": "NODE_058",
+      "distance_km": 1.51,
+      "name": "Bhosari-Dighi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_096",
+      "from": "NODE_029",
+      "to": "NODE_070",
+      "distance_km": 1.77,
+      "name": "Bhosari-Moshi-Dighi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_097",
+      "from": "NODE_027",
+      "to": "NODE_029",
+      "distance_km": 2.1,
+      "name": "Bhosari-Bhosari Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_098",
+      "from": "NODE_030",
+      "to": "NODE_056",
+      "distance_km": 1.69,
+      "name": "Indrayani-Moshi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_099",
+      "from": "NODE_030",
+      "to": "NODE_031",
+      "distance_km": 1.8,
+      "name": "Indrayani-Moshi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_100",
+      "from": "NODE_030",
+      "to": "SZ_02",
+      "distance_km": 3.41,
+      "name": "Indrayani-Major Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_101",
+      "from": "NODE_031",
+      "to": "NODE_033",
+      "distance_km": 1.75,
+      "name": "Moshi-Kudalwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_102",
+      "from": "NODE_031",
+      "to": "SZ_02",
+      "distance_km": 1.87,
+      "name": "Moshi-Major Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_103",
+      "from": "NODE_031",
+      "to": "NODE_032",
+      "distance_km": 2.15,
+      "name": "Moshi-Chikhali Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_104",
+      "from": "NODE_032",
+      "to": "NODE_033",
+      "distance_km": 0.94,
+      "name": "Chikhali-Kudalwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_105",
+      "from": "NODE_032",
+      "to": "NODE_077",
+      "distance_km": 1.07,
+      "name": "Chikhali-Spine-Kudalwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_106",
+      "from": "NODE_032",
+      "to": "NODE_090",
+      "distance_km": 1.13,
+      "name": "Chikhali-Moshi-Akurdi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_107",
+      "from": "NODE_032",
+      "to": "NODE_052",
+      "distance_km": 1.25,
+      "name": "Chikhali-Spine Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_108",
+      "from": "NODE_033",
+      "to": "NODE_077",
+      "distance_km": 0.81,
+      "name": "Kudalwadi-Spine-Kudalwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_109",
+      "from": "NODE_033",
+      "to": "NODE_051",
+      "distance_km": 0.97,
+      "name": "Kudalwadi-Telco Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_110",
+      "from": "NODE_033",
+      "to": "NODE_090",
+      "distance_km": 1.07,
+      "name": "Kudalwadi-Moshi-Akurdi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_111",
+      "from": "NODE_034",
+      "to": "NODE_035",
+      "distance_km": 1.19,
+      "name": "Talwade-Rupinagar Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_112",
+      "from": "NODE_034",
+      "to": "NODE_055",
+      "distance_km": 2.07,
+      "name": "Talwade-Appu Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_113",
+      "from": "NODE_034",
+      "to": "NODE_036",
+      "distance_km": 2.46,
+      "name": "Talwade-Yamuna Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_114",
+      "from": "NODE_034",
+      "to": "NODE_078",
+      "distance_km": 2.5,
+      "name": "Talwade-Appu-Akurdi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_115",
+      "from": "NODE_035",
+      "to": "NODE_055",
+      "distance_km": 1.13,
+      "name": "Rupinagar-Appu Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_116",
+      "from": "NODE_035",
+      "to": "NODE_036",
+      "distance_km": 1.27,
+      "name": "Rupinagar-Yamuna Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_117",
+      "from": "NODE_035",
+      "to": "NODE_078",
+      "distance_km": 1.34,
+      "name": "Rupinagar-Appu-Akurdi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_118",
+      "from": "NODE_036",
+      "to": "NODE_078",
+      "distance_km": 0.26,
+      "name": "Yamuna-Appu-Akurdi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_119",
+      "from": "NODE_036",
+      "to": "NODE_038",
+      "distance_km": 0.38,
+      "name": "Yamuna-Akurdi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_120",
+      "from": "NODE_036",
+      "to": "NODE_091",
+      "distance_km": 0.57,
+      "name": "Yamuna-Talwade-Walhekarwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_121",
+      "from": "NODE_036",
+      "to": "NODE_055",
+      "distance_km": 0.98,
+      "name": "Yamuna-Appu Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_122",
+      "from": "NODE_037",
+      "to": "NODE_093",
+      "distance_km": 0.36,
+      "name": "Nigdi-Chinchwad-Pradhikaran Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_123",
+      "from": "NODE_037",
+      "to": "NODE_091",
+      "distance_km": 0.92,
+      "name": "Nigdi-Talwade-Walhekarwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_124",
+      "from": "NODE_037",
+      "to": "NODE_038",
+      "distance_km": 1.16,
+      "name": "Nigdi-Akurdi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_125",
+      "from": "NODE_037",
+      "to": "NODE_078",
+      "distance_km": 1.21,
+      "name": "Nigdi-Appu-Akurdi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_126",
+      "from": "NODE_038",
+      "to": "NODE_078",
+      "distance_km": 0.4,
+      "name": "Akurdi-Appu-Akurdi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_127",
+      "from": "NODE_038",
+      "to": "NODE_091",
+      "distance_km": 0.52,
+      "name": "Akurdi-Talwade-Walhekarwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_128",
+      "from": "NODE_038",
+      "to": "NODE_093",
+      "distance_km": 0.79,
+      "name": "Akurdi-Chinchwad-Pradhikaran Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_129",
+      "from": "NODE_039",
+      "to": "NODE_067",
+      "distance_km": 0.82,
+      "name": "Khandoba-Nehrunagar-Walhekarwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_130",
+      "from": "NODE_039",
+      "to": "NODE_075",
+      "distance_km": 0.82,
+      "name": "Khandoba-Shinde-Hindustan Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_131",
+      "from": "NODE_039",
+      "to": "NODE_040",
+      "distance_km": 0.89,
+      "name": "Khandoba-Chinchwad Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_132",
+      "from": "NODE_039",
+      "to": "NODE_066",
+      "distance_km": 0.89,
+      "name": "Khandoba-Pimpri-Akurdi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_133",
+      "from": "NODE_040",
+      "to": "NODE_075",
+      "distance_km": 0.06,
+      "name": "Chinchwad-Shinde-Hindustan Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_134",
+      "from": "NODE_040",
+      "to": "NODE_041",
+      "distance_km": 0.86,
+      "name": "Chinchwad-Chinchwad Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_135",
+      "from": "NODE_040",
+      "to": "NODE_066",
+      "distance_km": 0.97,
+      "name": "Chinchwad-Pimpri-Akurdi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_136",
+      "from": "NODE_041",
+      "to": "NODE_074",
+      "distance_km": 0.26,
+      "name": "Chinchwad-Walhekarwadi-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_137",
+      "from": "NODE_041",
+      "to": "NODE_042",
+      "distance_km": 0.68,
+      "name": "Chinchwad-Thergaon Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_138",
+      "from": "NODE_041",
+      "to": "NODE_072",
+      "distance_km": 0.84,
+      "name": "Chinchwad-Nigdi-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_139",
+      "from": "NODE_042",
+      "to": "NODE_074",
+      "distance_km": 0.42,
+      "name": "Thergaon-Walhekarwadi-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_140",
+      "from": "NODE_042",
+      "to": "NODE_073",
+      "distance_km": 0.67,
+      "name": "Thergaon-Chinchwad-Bhumkar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_141",
+      "from": "NODE_042",
+      "to": "NODE_072",
+      "distance_km": 0.67,
+      "name": "Thergaon-Nigdi-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_142",
+      "from": "NODE_043",
+      "to": "NODE_092",
+      "distance_km": 0.31,
+      "name": "Walhekarwadi-Nigdi-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_143",
+      "from": "NODE_043",
+      "to": "NODE_046",
+      "distance_km": 0.96,
+      "name": "Walhekarwadi-Shinde Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_144",
+      "from": "NODE_043",
+      "to": "NODE_073",
+      "distance_km": 1.46,
+      "name": "Walhekarwadi-Chinchwad-Bhumkar Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_145",
+      "from": "NODE_042",
+      "to": "NODE_043",
+      "distance_km": 1.63,
+      "name": "Thergaon-Walhekarwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_146",
+      "from": "NODE_044",
+      "to": "NODE_045",
+      "distance_km": 0.98,
+      "name": "Ravet-Ravet Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_147",
+      "from": "NODE_044",
+      "to": "NODE_046",
+      "distance_km": 1.82,
+      "name": "Ravet-Shinde Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_148",
+      "from": "NODE_044",
+      "to": "NODE_053",
+      "distance_km": 2.58,
+      "name": "Ravet-Pradhikaran Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_149",
+      "from": "NODE_043",
+      "to": "NODE_044",
+      "distance_km": 2.73,
+      "name": "Walhekarwadi-Ravet Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_150",
+      "from": "NODE_045",
+      "to": "NODE_046",
+      "distance_km": 0.84,
+      "name": "Ravet-Shinde Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_151",
+      "from": "NODE_043",
+      "to": "NODE_045",
+      "distance_km": 1.77,
+      "name": "Walhekarwadi-Ravet Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_152",
+      "from": "NODE_045",
+      "to": "NODE_092",
+      "distance_km": 2.08,
+      "name": "Ravet-Nigdi-Tathawade Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_153",
+      "from": "NODE_046",
+      "to": "NODE_092",
+      "distance_km": 1.26,
+      "name": "Shinde-Nigdi-Tathawade Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_154",
+      "from": "NODE_047",
+      "to": "NODE_048",
+      "distance_km": 1.02,
+      "name": "Punawale-Tathawade Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_155",
+      "from": "NODE_046",
+      "to": "NODE_047",
+      "distance_km": 2.09,
+      "name": "Shinde-Punawale Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_156",
+      "from": "NODE_043",
+      "to": "NODE_047",
+      "distance_km": 2.21,
+      "name": "Walhekarwadi-Punawale Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_157",
+      "from": "NODE_011",
+      "to": "NODE_048",
+      "distance_km": 1.69,
+      "name": "Wakad-Tathawade Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_158",
+      "from": "NODE_049",
+      "to": "SZ_04",
+      "distance_km": 0.0,
+      "name": "Aditya-Aditya Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_159",
+      "from": "NODE_049",
+      "to": "NODE_072",
+      "distance_km": 0.36,
+      "name": "Aditya-Nigdi-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_160",
+      "from": "NODE_049",
+      "to": "NODE_081",
+      "distance_km": 0.9,
+      "name": "Aditya-Pimple-Pradhikaran Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_161",
+      "from": "NODE_050",
+      "to": "NODE_066",
+      "distance_km": 0.56,
+      "name": "Elpro-Pimpri-Akurdi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_162",
+      "from": "NODE_050",
+      "to": "NODE_067",
+      "distance_km": 0.56,
+      "name": "Elpro-Nehrunagar-Walhekarwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_163",
+      "from": "NODE_050",
+      "to": "NODE_071",
+      "distance_km": 0.67,
+      "name": "Elpro-Talwade-New Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_164",
+      "from": "NODE_051",
+      "to": "NODE_077",
+      "distance_km": 0.78,
+      "name": "Telco-Spine-Kudalwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_165",
+      "from": "NODE_051",
+      "to": "NODE_090",
+      "distance_km": 0.99,
+      "name": "Telco-Moshi-Akurdi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_166",
+      "from": "NODE_051",
+      "to": "NODE_069",
+      "distance_km": 1.07,
+      "name": "Telco-Bhosari-Pradhikaran Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_167",
+      "from": "NODE_052",
+      "to": "NODE_090",
+      "distance_km": 0.41,
+      "name": "Spine-Moshi-Akurdi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_168",
+      "from": "NODE_052",
+      "to": "NODE_077",
+      "distance_km": 0.69,
+      "name": "Spine-Spine-Kudalwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_169",
+      "from": "NODE_052",
+      "to": "NODE_069",
+      "distance_km": 1.18,
+      "name": "Spine-Bhosari-Pradhikaran Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_170",
+      "from": "NODE_053",
+      "to": "NODE_054",
+      "distance_km": 0.84,
+      "name": "Pradhikaran-Bhakti Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_171",
+      "from": "NODE_053",
+      "to": "SZ_03",
+      "distance_km": 0.84,
+      "name": "Pradhikaran-Bhakti Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_172",
+      "from": "NODE_037",
+      "to": "NODE_053",
+      "distance_km": 1.22,
+      "name": "Nigdi-Pradhikaran Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_173",
+      "from": "NODE_053",
+      "to": "NODE_055",
+      "distance_km": 1.4,
+      "name": "Pradhikaran-Appu Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_174",
+      "from": "NODE_054",
+      "to": "SZ_03",
+      "distance_km": 0.0,
+      "name": "Bhakti-Bhakti Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_175",
+      "from": "NODE_054",
+      "to": "NODE_055",
+      "distance_km": 0.98,
+      "name": "Bhakti-Appu Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_176",
+      "from": "NODE_054",
+      "to": "NODE_091",
+      "distance_km": 1.5,
+      "name": "Bhakti-Talwade-Walhekarwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_177",
+      "from": "NODE_055",
+      "to": "NODE_091",
+      "distance_km": 0.76,
+      "name": "Appu-Talwade-Walhekarwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_178",
+      "from": "NODE_055",
+      "to": "NODE_078",
+      "distance_km": 0.8,
+      "name": "Appu-Appu-Akurdi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_179",
+      "from": "NODE_055",
+      "to": "SZ_03",
+      "distance_km": 0.98,
+      "name": "Appu-Bhakti Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_180",
+      "from": "NODE_056",
+      "to": "NODE_057",
+      "distance_km": 2.15,
+      "name": "Moshi-Charholi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_181",
+      "from": "NODE_031",
+      "to": "NODE_056",
+      "distance_km": 3.13,
+      "name": "Moshi-Moshi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_182",
+      "from": "NODE_056",
+      "to": "NODE_070",
+      "distance_km": 3.24,
+      "name": "Moshi-Moshi-Dighi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_183",
+      "from": "NODE_057",
+      "to": "NODE_070",
+      "distance_km": 2.79,
+      "name": "Charholi-Moshi-Dighi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_184",
+      "from": "NODE_029",
+      "to": "NODE_057",
+      "distance_km": 3.25,
+      "name": "Bhosari-Charholi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_185",
+      "from": "NODE_028",
+      "to": "NODE_057",
+      "distance_km": 3.27,
+      "name": "Bhosari-Charholi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_186",
+      "from": "NODE_028",
+      "to": "NODE_058",
+      "distance_km": 2.56,
+      "name": "Bhosari-Dighi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_187",
+      "from": "NODE_058",
+      "to": "NODE_059",
+      "distance_km": 2.69,
+      "name": "Dighi-Bopkhel Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_188",
+      "from": "NODE_058",
+      "to": "NODE_070",
+      "distance_km": 3.13,
+      "name": "Dighi-Moshi-Dighi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_189",
+      "from": "NODE_059",
+      "to": "NODE_060",
+      "distance_km": 1.58,
+      "name": "Bopkhel-CME Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_190",
+      "from": "NODE_002",
+      "to": "NODE_059",
+      "distance_km": 2.3,
+      "name": "Dapodi-Bopkhel Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_191",
+      "from": "NODE_059",
+      "to": "NODE_082",
+      "distance_km": 3.04,
+      "name": "Bopkhel-Govind-Dighi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_192",
+      "from": "NODE_060",
+      "to": "NODE_082",
+      "distance_km": 2.0,
+      "name": "CME-Govind-Dighi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_193",
+      "from": "NODE_004",
+      "to": "NODE_060",
+      "distance_km": 2.12,
+      "name": "Pimple-CME Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_194",
+      "from": "NODE_061",
+      "to": "NODE_080",
+      "distance_km": 0.49,
+      "name": "Pimple-Bhumkar-Old-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_195",
+      "from": "NODE_061",
+      "to": "NODE_096",
+      "distance_km": 0.85,
+      "name": "Pimple-Bhumkar-Aditya-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_196",
+      "from": "NODE_062",
+      "to": "NODE_096",
+      "distance_km": 0.52,
+      "name": "Govind-Nadnagar-Aditya-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_197",
+      "from": "NODE_062",
+      "to": "NODE_068",
+      "distance_km": 0.65,
+      "name": "Govind-Nadnagar-Kasarwadi-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_198",
+      "from": "NODE_062",
+      "to": "NODE_063",
+      "distance_km": 0.76,
+      "name": "Govind-Nadnagar-Wakad-Hindustan Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_199",
+      "from": "NODE_063",
+      "to": "NODE_064",
+      "distance_km": 0.46,
+      "name": "Wakad-Hindustan-Bhumkar-Bhosari Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_200",
+      "from": "NODE_063",
+      "to": "NODE_068",
+      "distance_km": 0.49,
+      "name": "Wakad-Hindustan-Kasarwadi-Tathawade Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_201",
+      "from": "NODE_064",
+      "to": "NODE_086",
+      "distance_km": 0.79,
+      "name": "Bhumkar-Bhosari-Pimpri-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_202",
+      "from": "NODE_065",
+      "to": "NODE_071",
+      "distance_km": 0.49,
+      "name": "Rahatani-Kudalwadi-Talwade-New Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_203",
+      "from": "NODE_050",
+      "to": "NODE_065",
+      "distance_km": 0.91,
+      "name": "Elpro-Rahatani-Kudalwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_204",
+      "from": "NODE_066",
+      "to": "NODE_067",
+      "distance_km": 0.2,
+      "name": "Pimpri-Akurdi-Nehrunagar-Walhekarwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_205",
+      "from": "NODE_066",
+      "to": "NODE_075",
+      "distance_km": 0.93,
+      "name": "Pimpri-Akurdi-Shinde-Hindustan Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_206",
+      "from": "NODE_067",
+      "to": "NODE_075",
+      "distance_km": 1.04,
+      "name": "Nehrunagar-Walhekarwadi-Shinde-Hindustan Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_207",
+      "from": "NODE_069",
+      "to": "NODE_090",
+      "distance_km": 1.08,
+      "name": "Bhosari-Pradhikaran-Moshi-Akurdi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_208",
+      "from": "NODE_069",
+      "to": "NODE_077",
+      "distance_km": 1.16,
+      "name": "Bhosari-Pradhikaran-Spine-Kudalwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_209",
+      "from": "NODE_070",
+      "to": "NODE_089",
+      "distance_km": 1.89,
+      "name": "Moshi-Dighi-Bhosari-Kudalwadi Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_210",
+      "from": "NODE_072",
+      "to": "SZ_04",
+      "distance_km": 0.36,
+      "name": "Nigdi-Rose-Aditya Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_211",
+      "from": "NODE_072",
+      "to": "NODE_074",
+      "distance_km": 0.7,
+      "name": "Nigdi-Rose-Walhekarwadi-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_212",
+      "from": "NODE_073",
+      "to": "NODE_074",
+      "distance_km": 1.05,
+      "name": "Chinchwad-Bhumkar-Walhekarwadi-Nadnagar Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_213",
+      "from": "NODE_073",
+      "to": "NODE_092",
+      "distance_km": 1.18,
+      "name": "Chinchwad-Bhumkar-Nigdi-Tathawade Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_214",
+      "from": "NODE_049",
+      "to": "NODE_074",
+      "distance_km": 1.01,
+      "name": "Aditya-Walhekarwadi-Nadnagar Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_215",
+      "from": "NODE_041",
+      "to": "NODE_075",
+      "distance_km": 0.93,
+      "name": "Chinchwad-Shinde-Hindustan Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_216",
+      "from": "NODE_076",
+      "to": "NODE_094",
+      "distance_km": 0.12,
+      "name": "Aditya-Bhosari-Walhekarwadi-Dighi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_217",
+      "from": "NODE_076",
+      "to": "NODE_079",
+      "distance_km": 0.27,
+      "name": "Aditya-Bhosari-Dighi-Walhekarwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_218",
+      "from": "NODE_077",
+      "to": "NODE_090",
+      "distance_km": 0.29,
+      "name": "Spine-Kudalwadi-Moshi-Akurdi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_219",
+      "from": "NODE_078",
+      "to": "NODE_091",
+      "distance_km": 0.32,
+      "name": "Appu-Akurdi-Talwade-Walhekarwadi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_220",
+      "from": "NODE_079",
+      "to": "NODE_094",
+      "distance_km": 0.4,
+      "name": "Dighi-Walhekarwadi-Walhekarwadi-Dighi Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_221",
+      "from": "NODE_079",
+      "to": "SZ_01",
+      "distance_km": 0.7,
+      "name": "Dighi-Walhekarwadi-Dr. Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_222",
+      "from": "NODE_081",
+      "to": "NODE_086",
+      "distance_km": 0.84,
+      "name": "Pimple-Pradhikaran-Pimpri-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_223",
+      "from": "NODE_018",
+      "to": "NODE_081",
+      "distance_km": 0.85,
+      "name": "Nadnagar-Pimple-Pradhikaran Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_224",
+      "from": "NODE_081",
+      "to": "SZ_04",
+      "distance_km": 0.9,
+      "name": "Pimple-Pradhikaran-Aditya Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_225",
+      "from": "NODE_026",
+      "to": "NODE_082",
+      "distance_km": 1.61,
+      "name": "Nashik-Govind-Dighi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_226",
+      "from": "NODE_082",
+      "to": "NODE_088",
+      "distance_km": 1.97,
+      "name": "Govind-Dighi-Kasarwadi-Bhosari Link Road",
+      "highway_type": "primary",
+      "maxspeed_kmh": 60
+    },
+    {
+      "id": "RD_227",
+      "from": "NODE_080",
+      "to": "NODE_083",
+      "distance_km": 0.98,
+      "name": "Old-Tathawade-Wakad-New Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_228",
+      "from": "NODE_006",
+      "to": "NODE_083",
+      "distance_km": 1.05,
+      "name": "Pimple-Wakad-New Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_229",
+      "from": "NODE_084",
+      "to": "NODE_085",
+      "distance_km": 0.75,
+      "name": "Bhumkar-Rose-Rahatani-Bhumkar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_230",
+      "from": "NODE_014",
+      "to": "NODE_084",
+      "distance_km": 1.48,
+      "name": "Dange-Bhumkar-Rose Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_231",
+      "from": "NODE_085",
+      "to": "NODE_095",
+      "distance_km": 0.86,
+      "name": "Rahatani-Bhumkar-Shinde-New Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_232",
+      "from": "NODE_071",
+      "to": "NODE_086",
+      "distance_km": 0.77,
+      "name": "Talwade-New-Pimpri-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_233",
+      "from": "NODE_020",
+      "to": "NODE_086",
+      "distance_km": 0.79,
+      "name": "Pimpri-Pimpri-Nadnagar Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_234",
+      "from": "NODE_087",
+      "to": "SZ_02",
+      "distance_km": 1.06,
+      "name": "Nehrunagar-Hindustan-Major Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_235",
+      "from": "NODE_051",
+      "to": "NODE_087",
+      "distance_km": 1.13,
+      "name": "Telco-Nehrunagar-Hindustan Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_236",
+      "from": "NODE_088",
+      "to": "SZ_01",
+      "distance_km": 1.48,
+      "name": "Kasarwadi-Bhosari-Dr. Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_237",
+      "from": "NODE_089",
+      "to": "SZ_02",
+      "distance_km": 0.56,
+      "name": "Bhosari-Kudalwadi-Major Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_238",
+      "from": "NODE_087",
+      "to": "NODE_089",
+      "distance_km": 1.24,
+      "name": "Nehrunagar-Hindustan-Bhosari-Kudalwadi Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_239",
+      "from": "NODE_091",
+      "to": "NODE_093",
+      "distance_km": 0.61,
+      "name": "Talwade-Walhekarwadi-Chinchwad-Pradhikaran Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_240",
+      "from": "NODE_042",
+      "to": "NODE_092",
+      "distance_km": 1.33,
+      "name": "Thergaon-Nigdi-Tathawade Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_241",
+      "from": "NODE_078",
+      "to": "NODE_093",
+      "distance_km": 0.87,
+      "name": "Appu-Akurdi-Chinchwad-Pradhikaran Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_242",
+      "from": "NODE_095",
+      "to": "NODE_096",
+      "distance_km": 0.49,
+      "name": "Shinde-New-Aditya-Rose Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    },
+    {
+      "id": "RD_243",
+      "from": "NODE_068",
+      "to": "NODE_095",
+      "distance_km": 1.0,
+      "name": "Kasarwadi-Tathawade-Shinde-New Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_244",
+      "from": "NODE_076",
+      "to": "SZ_01",
+      "distance_km": 0.92,
+      "name": "Aditya-Bhosari-Dr. Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_245",
+      "from": "NODE_051",
+      "to": "SZ_02",
+      "distance_km": 1.49,
+      "name": "Telco-Major Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_246",
+      "from": "NODE_091",
+      "to": "SZ_03",
+      "distance_km": 1.5,
+      "name": "Talwade-Walhekarwadi-Bhakti Link Road",
+      "highway_type": "secondary",
+      "maxspeed_kmh": 45
+    },
+    {
+      "id": "RD_247",
+      "from": "NODE_018",
+      "to": "SZ_04",
+      "distance_km": 0.81,
+      "name": "Nadnagar-Aditya Link Road",
+      "highway_type": "residential",
+      "maxspeed_kmh": 30
+    }
+  ],
+  "ngo_bases": [
+    {
+      "id": "NGO_01",
+      "name": "Red Cross Emergency Relief Depot",
+      "node": "NODE_022",
+      "contact": "+91 20 2742 5555",
+      "vehicle_capacity": 8,
+      "base_location": "Nehrunagar Transit Hub"
+    },
+    {
+      "id": "NGO_02",
+      "name": "NDRF 5th Battalion Rapid Task Force",
+      "node": "NODE_024",
+      "contact": "+91 20 2747 1122",
+      "vehicle_capacity": 14,
+      "base_location": "Sant Tukaram Nagar Metro Depot"
+    },
+    {
+      "id": "NGO_03",
+      "name": "Rotary Disaster Support Unit PCMC",
+      "node": "NODE_037",
+      "contact": "+91 20 2765 9900",
+      "vehicle_capacity": 6,
+      "base_location": "Nigdi Pradhikaran Civic Center"
+    },
+    {
+      "id": "NGO_04",
+      "name": "Civil Defense PCMC Quick Inundation Cell",
+      "node": "NODE_014",
+      "contact": "+91 20 2727 4400",
+      "vehicle_capacity": 10,
+      "base_location": "Dange Chowk Fire Command"
+    }
+  ]
+}
